@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: 
+Disallow: /lnbfederal.github.io/
+Disallow: /assets/
+Disallow: /.git/
+Disallow: /images/
+Disallow: /img/
+Disallow: /media/
+Disallow: /static/images/
+Disallow: /uploads/
+
+Sitemap: https://lnbfederal.com/sitemap.xml
