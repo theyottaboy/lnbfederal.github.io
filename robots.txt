@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: 
 Disallow: /lnbfederal.github.io/
 Disallow: /assets/
 Disallow: /.git/
