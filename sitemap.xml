@@ -7,15 +7,21 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>https://aws.amazon.com/marketplace/pp/prodview-a5e3xbyrcr33k?sr=0-1&ref_=beagle&applicationId=AWSMPContessa</loc>
+        <lastmod>2025-05-22</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>https://www.crunchbase.com/organization/lnb-federal-corporation</loc>
         <lastmod>2025-05-22</lastmod>
-        <changefreq>weekly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
      <url>
         <loc>https://www.dnb.com/business-directory/company-profiles.lnb_federal_corporation.280602175d4f29389a54cac4e63c1104.html</loc>
         <lastmod>2025-05-22</lastmod>
-        <changefreq>weekly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
 </urlset>
