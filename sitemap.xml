@@ -1,39 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- 1. Official Website -->
     <url>
         <loc>https://lnbfederal.com/</loc>
         <lastmod>2025-05-22</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
+
+    <!-- 2. (Reserved for .gov/.mil links if added later) -->
+
+    <!-- 3. AWS Marketplace Listings -->
     <url>
         <loc>https://aws.amazon.com/marketplace/pp/prodview-a5e3xbyrcr33k</loc>
         <lastmod>2025-05-22</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
-     <url>
+    <url>
         <loc>https://aws.amazon.com/marketplace/pp/prodview-wjdmzeveev6t2</loc>
         <lastmod>2025-05-22</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
-     <url>
+    <url>
         <loc>https://aws.amazon.com/marketplace/seller-profile?id=seller-yd5mb6pympu2k</loc>
         <lastmod>2025-05-22</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
+
+    <!-- 4. Business & GovTech Directories -->
+    <url>
+        <loc>https://www.dnb.com/business-directory/company-profiles.lnb_federal_corporation.280602175d4f29389a54cac4e63c1104.html</loc>
+        <lastmod>2025-05-22</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- 5. Professional & Media Profiles -->
     <url>
         <loc>https://www.crunchbase.com/organization/lnb-federal-corporation</loc>
         <lastmod>2025-05-22</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
+
+    <!-- 6. Internal Portals & Apps -->
     <url>
-        <loc>https://www.dnb.com/business-directory/company-profiles.lnb_federal_corporation.280602175d4f29389a54cac4e63c1104.html</loc>
-        <lastmod>2025-05-22</lastmod>
+        <loc>https://lnbfederal.sharepoint.com</loc>
+        <lastmod>2025-02-07</lastmod>
         <changefreq>daily</changefreq>
-        <priority>0.8</priority>
+        <priority>0.7</priority>
     </url>
+    <url>
+        <loc>https://myapps.microsoft.com/?whr=lnbfederal.com</loc>
+        <lastmod>2025-02-07</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+
 </urlset>
