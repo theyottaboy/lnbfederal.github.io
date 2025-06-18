@@ -10,12 +10,13 @@
     </url>
 
     <!-- 2. (Reserved for .gov/.mil links if added later) -->
-     <url>
+    <url>
         <loc>https://dsbs.sba.gov/search/dsp_profile.cfm?SAM_UEI=NG4XZH3GUA48</loc>
         <lastmod>2025-02-07</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
+
     <!-- 3. AWS Marketplace Listings -->
     <url>
         <loc>https://aws.amazon.com/marketplace/pp/prodview-a5e3xbyrcr33k</loc>
@@ -70,6 +71,20 @@
         <lastmod>2025-02-07</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
+    </url>
+
+    <!-- 7. Social Media Profiles -->
+    <url>
+        <loc>https://www.f6s.com/theyottaboy</loc>
+        <lastmod>2025-05-22</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.f6s.com/lnbfederal</loc>
+        <lastmod>2025-05-22</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
     </url>
 
 </urlset>
