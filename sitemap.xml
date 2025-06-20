@@ -14,7 +14,7 @@
         <loc>https://dsbs.sba.gov/search/dsp_profile.cfm?SAM_UEI=NG4XZH3GUA48</loc>
         <lastmod>2025-02-07</lastmod>
         <changefreq>daily</changefreq>
-        <priority>1.0</priority>
+        <priority>0.9</priority>
     </url>
 
     <!-- 3. AWS Marketplace Listings -->
@@ -22,19 +22,19 @@
         <loc>https://aws.amazon.com/marketplace/pp/prodview-a5e3xbyrcr33k</loc>
         <lastmod>2025-05-22</lastmod>
         <changefreq>daily</changefreq>
-        <priority>1.0</priority>
+        <priority>0.9</priority>
     </url>
     <url>
         <loc>https://aws.amazon.com/marketplace/pp/prodview-wjdmzeveev6t2</loc>
         <lastmod>2025-05-22</lastmod>
         <changefreq>daily</changefreq>
-        <priority>1.0</priority>
+        <priority>0.9</priority>
     </url>
     <url>
         <loc>https://aws.amazon.com/marketplace/seller-profile?id=seller-yd5mb6pympu2k</loc>
         <lastmod>2025-05-22</lastmod>
         <changefreq>daily</changefreq>
-        <priority>1.0</priority>
+        <priority>0.9</priority>
     </url>
 
     <!-- 4. Business & GovTech Directories -->
@@ -50,7 +50,13 @@
         <loc>https://www.crunchbase.com/organization/lnb-federal-corporation</loc>
         <lastmod>2025-05-22</lastmod>
         <changefreq>daily</changefreq>
-        <priority>0.8</priority>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://theorg.com/org/lnbfederal</loc>
+        <lastmod>2025-06-20</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
     </url>
     <url>
         <loc>https://www.linkedin.com/in/laxnb</loc>
@@ -64,13 +70,13 @@
         <loc>https://lnbfederal.sharepoint.com</loc>
         <lastmod>2025-02-07</lastmod>
         <changefreq>daily</changefreq>
-        <priority>0.7</priority>
+        <priority>0.9</priority>
     </url>
     <url>
         <loc>https://myapps.microsoft.com/?whr=lnbfederal.com</loc>
         <lastmod>2025-02-07</lastmod>
         <changefreq>daily</changefreq>
-        <priority>0.7</priority>
+        <priority>0.9</priority>
     </url>
 
     <!-- 7. Social Media Profiles -->
@@ -78,25 +84,25 @@
         <loc>https://www.f6s.com/theyottaboy</loc>
         <lastmod>2025-05-22</lastmod>
         <changefreq>daily</changefreq>
-        <priority>0.8</priority>
+        <priority>0.9</priority>
     </url>
     <url>
         <loc>https://www.f6s.com/lnbfederal</loc>
         <lastmod>2025-05-22</lastmod>
         <changefreq>daily</changefreq>
-        <priority>0.8</priority>
+        <priority>0.9</priority>
     </url>
     <url>
         <loc>https://x.com/LNBFederal</loc>
         <lastmod>2025-05-22</lastmod>
         <changefreq>daily</changefreq>
-        <priority>0.8</priority>
+        <priority>0.9</priority>
     </url>
     <url>
         <loc>https://www.partnerbase.com/lnb-federal-corporation</loc>
         <lastmod>2025-06-19</lastmod>
         <changefreq>daily</changefreq>
-        <priority>1.0</priority>
+        <priority>0.9</priority>
     </url>
 
 </urlset>
