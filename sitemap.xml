@@ -9,6 +9,14 @@
     <priority>1.0</priority>
   </url>
 
+  <!-- 1.1 AWS Startup Showcase -->
+  <url>
+    <loc>https://aws.amazon.com/startups/showcase/startup-details/3b18a335-d189-4e00-b6a6-788400f5bc9e</loc>
+    <lastmod>2025-07-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
   <!-- 2. Government & Certification Profiles -->
   <url>
     <loc>https://dsbs.sba.gov/search/dsp_profile.cfm?SAM_UEI=NG4XZH3GUA48</loc>
