@@ -25,7 +25,7 @@
              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-         })(window, document, "clarity", "script", "sdira0k3ts");
+         })(window, document, "clarity", "script", "sel6muykpv");
       </script>
       <script type="application/ld+json">
          {
@@ -653,6 +653,7 @@
          transition: opacity 0.3s ease;
          ">
          <div style="
+            position: relative;
             background: #fff;
             padding: 3em;
             max-width: 730px;
@@ -661,11 +662,31 @@
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
             color: #112e51;
             ">
+            <!-- Red square close button with white X -->
+            <button onclick="revealSite()" style="
+               position: absolute;
+               top: 15px;
+               right: 15px;
+               width: 34px;
+               height: 34px;
+               background-color: red;
+               color: white;
+               font-size: 35px;
+               font-weight: bold;
+               border: none;
+               border-radius: 4px;
+               cursor: pointer;
+               line-height: 1;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               " aria-label="Close">&times;</button>
             <h2 style="
                margin-bottom: 1em;
                font-weight: 700;
                font-size: 22px;
-               text-align: center;">
+               text-align: center;
+               ">
                Notice of Corporate Merger
             </h2>
             <div style="text-align: left; font-size: 16px; line-height: 1.7;">
@@ -675,32 +696,6 @@
                <p style="margin-bottom: 1.2em;">
                   The merger was duly filed with the New York Department of State and the Delaware Division of Corporations. The transaction complies with the Defense Logistics Agency’s Commercial and Government Entity (CAGE) system requirements and reporting protocols, as well as the Defense Contract Management Agency’s guidelines governing the novation of active U.S. Department of Defense contracts. As a result of the merger, LNB Federal Corporation is the legal successor to all operations, assets, and liabilities of Bitfastt Inc.
                </p>
-               <p style="color: #6c757d; text-align: center;">
-                  Please click the button below to navigate to the LNB Federal corporate webpage.
-               </p>
-            </div>
-            <!-- Buttons -->
-            <div style="
-               display: flex;
-               justify-content: center;
-               align-items: center;
-               gap: 1em;
-               flex-wrap: wrap;
-               margin-top: 1.8em;">
-               <div onclick="revealSite()" style="
-                  min-width: 220px;
-                  padding: 0.9em 1.4em;
-                  background-color: #112e51;
-                  color: #fff;
-                  font-weight: bold;
-                  font-size: 16px;
-                  border-radius: 5px;
-                  text-align: center;
-                  cursor: pointer;
-                  transition: background 0.3s ease;
-                  " onmouseover="this.style.background='#0b1d3a'" onmouseout="this.style.background='#112e51'">
-                  LNB Federal Corporation
-               </div>
             </div>
          </div>
       </div>
@@ -746,21 +741,24 @@
          function revealSite() {
            const popup = document.getElementById('lnb-acquisition-popup');
            const blur = document.getElementById('lnb-glass-blur');
-         
-           popup.style.opacity = '0';
-           blur.style.opacity = '0';
-         
-           setTimeout(() => {
-             popup.style.display = 'none';
-             blur.style.display = 'none';
-         
-             const banner = document.getElementById('lnb-privacy-banner');
-             if (banner) {
-               banner.style.display = 'block';
-               void banner.offsetWidth;
-               banner.style.opacity = '1';
-             }
-           }, 300);
+           if (popup) {
+             popup.style.opacity = '0';
+             setTimeout(() => {
+               popup.style.display = 'none';
+             }, 300);
+           }
+           if (blur) {
+             blur.style.opacity = '0';
+             setTimeout(() => {
+               blur.style.display = 'none';
+             }, 300);
+           }
+           const banner = document.getElementById('lnb-privacy-banner');
+           if (banner) {
+             banner.style.display = 'block';
+             void banner.offsetWidth;
+             banner.style.opacity = '1';
+           }
          }
          
          function dismissPrivacyBanner() {
@@ -773,7 +771,8 @@
          
          window.addEventListener('load', () => {
            document.getElementById('lnb-acquisition-popup').style.display = 'flex';
-           document.getElementById('lnb-glass-blur').style.display = 'block';
+           const blur = document.getElementById('lnb-glass-blur');
+           if (blur) blur.style.display = 'block';
          });
       </script>
    </body>
