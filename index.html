@@ -310,7 +310,6 @@
                               <img src="/assets/img/close.svg" alt="Close navigation menu">
                               </button>
                               <ul class="usa-nav-primary usa-accordion">
-                                 <li><a class="usa-nav-link" href="#andromeda-section"><span>Andromeda</span></a></li>
                                  <li><a class="usa-nav-link" href="https://aws.amazon.com/startups/showcase/startup-details/3b18a335-d189-4e00-b6a6-788400f5bc9e"><span>AWS Startups Showcase</span></a></li>
                                  <li>
                                  <li><a class="usa-nav-link" href="https://aws.amazon.com/marketplace/seller-profile?id=seller-yd5mb6pympu2k"><span>AWS Marketplace</span></a></li>
@@ -825,62 +824,62 @@
          </div>
       </div>
       <!-- 
-      <script>
-         function revealSite() {
-           const popup = document.getElementById('lnb-acquisition-popup');
-           const blur = document.getElementById('lnb-glass-blur');
-           const banner = document.getElementById('lnb-privacy-banner');
-         
-           if (popup) {
-             popup.style.opacity = '0';
-             setTimeout(() => {
-               popup.style.display = 'none';
-             }, 300);
-           }
-         
-           if (blur) {
-             blur.style.opacity = '0';
-             setTimeout(() => {
-               blur.style.display = 'none';
-             }, 300);
-           }
-         
-           if (banner) {
-             banner.style.display = 'block';
-             void banner.offsetWidth;
-             banner.style.opacity = '1';
-           }
-         
-           // ✅ Restore scroll
-           document.body.style.overflow = 'auto';
-         }
-         
-         function dismissPrivacyBanner() {
-           const banner = document.getElementById('lnb-privacy-banner');
-           if (banner) {
-             banner.style.opacity = '0';
-             setTimeout(() => {
-               banner.style.display = 'none';
-             }, 400);
-           }
-         }
-         
-         window.addEventListener('load', () => {
-           const popup = document.getElementById('lnb-acquisition-popup');
-           const blur = document.getElementById('lnb-glass-blur');
-         
-           if (popup) {
-             popup.style.display = 'flex';
-           }
-         
-           if (blur) {
-             blur.style.display = 'block';
-             blur.style.opacity = '1';
-           }
-         
-           // ✅ Lock scroll
-           document.body.style.overflow = 'hidden';
-         });
-      </script>-->
+         <script>
+            function revealSite() {
+              const popup = document.getElementById('lnb-acquisition-popup');
+              const blur = document.getElementById('lnb-glass-blur');
+              const banner = document.getElementById('lnb-privacy-banner');
+            
+              if (popup) {
+                popup.style.opacity = '0';
+                setTimeout(() => {
+                  popup.style.display = 'none';
+                }, 300);
+              }
+            
+              if (blur) {
+                blur.style.opacity = '0';
+                setTimeout(() => {
+                  blur.style.display = 'none';
+                }, 300);
+              }
+            
+              if (banner) {
+                banner.style.display = 'block';
+                void banner.offsetWidth;
+                banner.style.opacity = '1';
+              }
+            
+              // ✅ Restore scroll
+              document.body.style.overflow = 'auto';
+            }
+            
+            function dismissPrivacyBanner() {
+              const banner = document.getElementById('lnb-privacy-banner');
+              if (banner) {
+                banner.style.opacity = '0';
+                setTimeout(() => {
+                  banner.style.display = 'none';
+                }, 400);
+              }
+            }
+            
+            window.addEventListener('load', () => {
+              const popup = document.getElementById('lnb-acquisition-popup');
+              const blur = document.getElementById('lnb-glass-blur');
+            
+              if (popup) {
+                popup.style.display = 'flex';
+              }
+            
+              if (blur) {
+                blur.style.display = 'block';
+                blur.style.opacity = '1';
+              }
+            
+              // ✅ Lock scroll
+              document.body.style.overflow = 'hidden';
+            });
+         </script>-->
    </body>
 </html>
