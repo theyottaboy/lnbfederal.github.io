@@ -203,6 +203,55 @@
       </script>
    </head>
    <body>
+      <!-- Splash Screen -->
+      <style>
+         @keyframes spin {
+         from { transform: rotate(0deg); }
+         to { transform: rotate(360deg); }
+         }
+         #splash-screen img {
+         max-height: 600px;
+         width: auto;
+         transition: transform 0.3s ease;
+         }
+         .spin {
+         animation: spin 3.5s linear;
+         }
+      </style>
+      <div id="splash-screen" style="
+         position: fixed;
+         top: 0; left: 0;
+         width: 100%; height: 100%;
+         background: white;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         z-index: 9999;">
+         <img id="seal-img" src="assets/uswds/img/seal.png" alt="Corporate Seal">
+      </div>
+      <script>
+         const seal = document.getElementById('seal-img');
+         const splash = document.getElementById('splash-screen');
+         
+         // 1. Wait 1.5s static
+         setTimeout(() => {
+           // 2. Spin for 3.5s
+           seal.classList.add('spin');
+         
+           // After 3.5 seconds (spin duration)
+           setTimeout(() => {
+             // 3. Stop spinning
+             seal.classList.remove('spin');
+         
+             // 4. Wait 2s then hide splash screen
+             setTimeout(() => {
+               splash.style.display = 'none';
+             }, 2000);
+         
+           }, 3500);
+         
+         }, 1500);
+      </script>
       <a class="usa-skipnav" href="#main-content"> Skip to main content </a>
       <h1 class="usa-sr-only">LNB Federal Corporation - Defense, Space, & Cyber Systems</h1>
       <section class="usa-banner">
@@ -659,83 +708,83 @@
       </footer>
       </footer>
       <script src="assets/uswds/js/uswds.min.js" async></script>
-      <!-- Glass Blur Background -->
-      <div id="lnb-glass-blur" style="
-         position: fixed;
-         top: 0;
-         left: 0;
-         width: 100vw;
-         height: 100vh;
-         backdrop-filter: blur(0px) brightness(0.85);
-         background-color: rgba(255, 255, 255, 0.08);
-         z-index: 99998;
-         transition: opacity 0.3s ease;
-         display: none;
-         opacity: 1;
-         "></div>
-      <!-- Acquisition Modal -->
-      <div id="lnb-acquisition-popup" style="
-         position: fixed;
-         top: 0;
-         left: 0;
-         width: 100vw;
-         height: 100vh;
-         display: none;
-         align-items: center;
-         justify-content: center;
-         z-index: 99999;
-         font-family: 'Lato', sans-serif;
-         background-color: rgba(0, 0, 0, 0.5);
-         transition: opacity 0.3s ease;
-         opacity: 1;
-         ">
-         <div style="
-            position: relative;
-            background: #fff;
-            padding: 3em;
-            max-width: 730px;
-            width: 96%;
-            border-radius: 10px;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
-            color: #112e51;
+      <!-- 
+         <div id="lnb-glass-blur" style="
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            backdrop-filter: blur(0px) brightness(0.85);
+            background-color: rgba(255, 255, 255, 0.08);
+            z-index: 99998;
+            transition: opacity 0.3s ease;
+            display: none;
+            opacity: 1;
+            "></div>
+         
+         <div id="lnb-acquisition-popup" style="
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 99999;
+            font-family: 'Lato', sans-serif;
+            background-color: rgba(0, 0, 0, 0.5);
+            transition: opacity 0.3s ease;
+            opacity: 1;
             ">
-            <!-- Close Button -->
-            <button onclick="revealSite()" style="
-               position: absolute;
-               top: 15px;
-               right: 15px;
-               width: 34px;
-               height: 34px;
-               background-color: red;
-               color: white;
-               font-size: 35px;
-               font-weight: bold;
-               border: none;
-               border-radius: 4px;
-               cursor: pointer;
-               line-height: 1;
-               display: flex;
-               align-items: center;
-               justify-content: center;
-               " aria-label="Close">&times;</button>
-            <h2 style="
-               margin-bottom: 1em;
-               font-weight: 700;
-               font-size: 22px;
-               text-align: center;
+            <div style="
+               position: relative;
+               background: #fff;
+               padding: 3em;
+               max-width: 730px;
+               width: 96%;
+               border-radius: 10px;
+               box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+               color: #112e51;
                ">
-               Notice of Corporate Merger
-            </h2>
-            <div style="text-align: left; font-size: 16px; line-height: 1.7;">
-               <p style="margin-bottom: 1.2em;">
-                  Effective June 9, 2025, LNB Federal Corporation, a Delaware corporation, acquired Bitfastt Inc, a New York corporation, through a statutory merger, with LNB Federal Corporation continuing as the surviving entity.
-               </p>
-               <p style="margin-bottom: 1.2em;">
-                  The merger was duly filed with the New York Department of State and the Delaware Division of Corporations. The transaction complies with the Defense Logistics Agency’s Commercial and Government Entity (CAGE) system requirements and reporting protocols, as well as the Defense Contract Management Agency’s guidelines governing the novation of active U.S. Department of Defense contracts. As a result of the merger, LNB Federal Corporation is the legal successor to all operations, assets, and liabilities of Bitfastt Inc.
-               </p>
+               
+               <button onclick="revealSite()" style="
+                  position: absolute;
+                  top: 15px;
+                  right: 15px;
+                  width: 34px;
+                  height: 34px;
+                  background-color: red;
+                  color: white;
+                  font-size: 35px;
+                  font-weight: bold;
+                  border: none;
+                  border-radius: 4px;
+                  cursor: pointer;
+                  line-height: 1;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  " aria-label="Close">&times;</button>
+               <h2 style="
+                  margin-bottom: 1em;
+                  font-weight: 700;
+                  font-size: 22px;
+                  text-align: center;
+                  ">
+                  Notice of Corporate Merger
+               </h2>
+               <div style="text-align: left; font-size: 16px; line-height: 1.7;">
+                  <p style="margin-bottom: 1.2em;">
+                     Effective June 9, 2025, LNB Federal Corporation, a Delaware corporation, acquired Bitfastt Inc, a New York corporation, through a statutory merger, with LNB Federal Corporation continuing as the surviving entity.
+                  </p>
+                  <p style="margin-bottom: 1.2em;">
+                     The merger was duly filed with the New York Department of State and the Delaware Division of Corporations. The transaction complies with the Defense Logistics Agency’s Commercial and Government Entity (CAGE) system requirements and reporting protocols, as well as the Defense Contract Management Agency’s guidelines governing the novation of active U.S. Department of Defense contracts. As a result of the merger, LNB Federal Corporation is the legal successor to all operations, assets, and liabilities of Bitfastt Inc.
+                  </p>
+               </div>
             </div>
-         </div>
-      </div>
+         </div>      -->
       <!-- Privacy Banner -->
       <div id="lnb-privacy-banner" style="
          position: fixed;
