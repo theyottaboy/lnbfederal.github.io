@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Fawkes Opteron Yotta -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- 1. Official Website -->
   <url>
     <loc>https://lnbfederal.com/</loc>
     <lastmod>2025-05-22</lastmod>
@@ -10,7 +8,6 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- 1.1 AWS Startup Showcase -->
   <url>
     <loc>https://aws.amazon.com/startups/showcase</loc>
     <lastmod>2025-07-08</lastmod>
@@ -24,7 +21,6 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- New: GitHub Repository -->
   <url>
     <loc>https://github.com/LNBFEDERAL</loc>
     <lastmod>2025-08-08</lastmod>
@@ -32,7 +28,20 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- 2. Government & Certification Profiles -->
+  <url>
+    <loc>https://github.com/lnbfederal</loc>
+    <lastmod>2025-08-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.credly.com/users/laxnb/</loc>
+    <lastmod>2025-08-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
   <url>
     <loc>https://govtribe.com/vendors/lnb-federal-corporation-12wn4</loc>
     <lastmod>2025-07-20</lastmod>
@@ -52,7 +61,6 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- 3. AWS Marketplace Listings -->
   <url>
     <loc>https://aws.amazon.com/marketplace/pp/prodview-a5e3xbyrcr33k</loc>
     <lastmod>2025-05-22</lastmod>
@@ -72,7 +80,6 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- 4. Business & GovTech Directories -->
   <url>
     <loc>https://www.dnb.com/business-directory/company-profiles.lnb_federal_corporation.280602175d4f29389a54cac4e63c1104.html</loc>
     <lastmod>2025-05-22</lastmod>
@@ -80,7 +87,6 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- 5. Professional & Media Profiles -->
   <url>
     <loc>https://www.crunchbase.com/organization/lnb-federal-corporation</loc>
     <lastmod>2025-05-22</lastmod>
@@ -118,7 +124,6 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- 6. Social Media Profiles -->
   <url>
     <loc>https://www.linkedin.com/company/lnbfederal/</loc>
     <lastmod>2025-06-20</lastmod>
@@ -156,7 +161,6 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- 7. Internal Portals & Apps -->
   <url>
     <loc>https://lnbfederal.sharepoint.com</loc>
     <lastmod>2025-02-07</lastmod>
