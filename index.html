@@ -203,54 +203,88 @@
       </script>
    </head>
    <body>
+      <!-- Load Lato font -->
+      <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
       <!-- Splash Screen -->
-      <style>
-         @keyframes spin {
-         from { transform: rotate(0deg); }
-         to { transform: rotate(360deg); }
-         }
-         #splash-screen img {
-         max-height: 600px;
-         width: auto;
-         transition: transform 0.3s ease;
-         }
-         .spin {
-         animation: spin 3.5s linear;
-         }
-      </style>
       <div id="splash-screen" style="
          position: fixed;
          top: 0; left: 0;
          width: 100%; height: 100%;
-         background: white;
+         background-color: #112e51;
          display: flex;
+         flex-direction: column;
          justify-content: center;
          align-items: center;
-         z-index: 9999;">
-         <img id="seal-img" src="assets/uswds/img/seal.png" alt="Corporate Seal">
+         z-index: 9999;
+         font-family: 'Lato', sans-serif;
+         ">
+         <img id="seal-img" src="assets/uswds/img/seal.png" alt="Corporate Seal" style="
+            max-height: 600px;
+            width: auto;
+            opacity: 0;
+            filter: drop-shadow(0 0 20px rgba(255,255,255,0.9));
+            transition: opacity 3s ease;
+            ">
+         <div id="text-container" style="
+            text-align: center;
+            color: white;
+            margin-top: 20px;
+            ">
+            <strong id="brand-name" style="
+               font-weight: 700;
+               font-family: 'Lato', sans-serif;
+               font-size: 2.5em;
+               opacity: 0;
+               transform: translateY(20px);
+               transition: opacity 1s ease-out, transform 1s ease-out;
+               display: block;
+               margin-bottom: 10px;
+               ">LNB Federal Corporation</strong>
+            <em id="tagline" style="
+               font-family: 'Times New Roman', serif;
+               font-style: italic;
+               font-weight: normal;
+               font-size: 1.4em;
+               opacity: 0;
+               transform: translateY(20px);
+               transition: opacity 1s ease-out, transform 1s ease-out;
+               display: block;
+               ">
+            Empowering Government, Empowering Tomorrow.
+            </em>
+         </div>
       </div>
       <script>
          const seal = document.getElementById('seal-img');
+         const brandName = document.getElementById('brand-name');
+         const tagline = document.getElementById('tagline');
          const splash = document.getElementById('splash-screen');
          
-         // 1. Wait 1.5s static
          setTimeout(() => {
-           // 2. Spin for 3.5s
-           seal.classList.add('spin');
+           // Fade in seal
+           seal.style.opacity = '1';
          
-           // After 3.5 seconds (spin duration)
+           // Brand name fade + slide up
            setTimeout(() => {
-             // 3. Stop spinning
-             seal.classList.remove('spin');
+             brandName.style.opacity = '1';
+             brandName.style.transform = 'translateY(0)';
+           }, 1000);
          
-             // 4. Wait 2s then hide splash screen
+           // Tagline fade + slide up
+           setTimeout(() => {
+             tagline.style.opacity = '1';
+             tagline.style.transform = 'translateY(0)';
+           }, 1700);
+         
+           // Fade out splash after 7 seconds
+           setTimeout(() => {
+             splash.style.transition = 'opacity 2s ease';
+             splash.style.opacity = '0';
              setTimeout(() => {
                splash.style.display = 'none';
              }, 2000);
-         
-           }, 3500);
-         
-         }, 1500);
+           }, 7000);
+         }, 500);
       </script>
       <a class="usa-skipnav" href="#main-content"> Skip to main content </a>
       <h1 class="usa-sr-only">LNB Federal Corporation - Defense, Space, & Cyber Systems</h1>
@@ -323,7 +357,8 @@
                                        <li><a class="usa-nav-link" href="https://www.ipp.gov"><span> IPP </span></a></li>
                                        <li><a class="usa-nav-link" href="https://experiencecenter.unanet.com"><span> ERP </span></a></li>
                                        <li><a class="usa-nav-link" href="https://login.xero.com"><span> Xero </span></a></li>
-                                       <li><a class="usa-nav-link" href="https://github.com/lnbfederal"><span> GitHub Enterprise </span></a></li></li>
+                                       <li><a class="usa-nav-link" href="https://github.com/lnbfederal"><span> GitHub Enterprise </span></a></li>
+                                       </li>
                                        <li><a class="usa-nav-link" href="https://iq.govwin.com/cas/login"><span> Production </span></a></li>
                                        <li><a class="usa-nav-link" href="https://www.bgov.com/auth/sign_in"><span> Bloomberg Government </span></a></li>
                                        <li><a class="usa-nav-link" href="https://my.adp.com"><span> Payroll </span></a></li>
