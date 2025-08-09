@@ -24,6 +24,14 @@
     <priority>1.0</priority>
   </url>
 
+  <!-- New: GitHub Repository -->
+  <url>
+    <loc>https://github.com/LNBFEDERAL</loc>
+    <lastmod>2025-08-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
   <!-- 2. Government & Certification Profiles -->
   <url>
     <loc>https://govtribe.com/vendors/lnb-federal-corporation-12wn4</loc>
