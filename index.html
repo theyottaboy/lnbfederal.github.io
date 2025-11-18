@@ -20,12 +20,101 @@
     <link rel="manifest" href="/assets/uswds/img/favicons/site.webmanifest" />
     <link rel="canonical" href="https://lnbfederal.com" />
     <link rel="stylesheet" href="assets/css/main.css" media="screen" />
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <style>
+      @font-face {
+      font-family: "Helvetica Neue";
+      src: url("/assets/fonts/helvetica-neue-5/HelveticaNeueRoman.otf") format("opentype");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+      }
+      @font-face {
+      font-family: "Helvetica Neue";
+      src: url("/assets/fonts/helvetica-neue-5/HelveticaNeueItalic.ttf") format("truetype");
+      font-weight: 400;
+      font-style: italic;
+      font-display: swap;
+      }
+      @font-face {
+      font-family: "Helvetica Neue";
+      src: url("/assets/fonts/helvetica-neue-5/HelveticaNeueLight.otf") format("opentype");
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+      }
+      @font-face {
+      font-family: "Helvetica Neue";
+      src: url("/assets/fonts/helvetica-neue-5/HelveticaNeueLightItalic.otf") format("opentype");
+      font-weight: 300;
+      font-style: italic;
+      font-display: swap;
+      }
+      @font-face {
+      font-family: "Helvetica Neue";
+      src: url("/assets/fonts/helvetica-neue-5/HelveticaNeueMedium.otf") format("opentype");
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+      }
+      @font-face {
+      font-family: "Helvetica Neue";
+      src: url("/assets/fonts/helvetica-neue-5/HelveticaNeueMediumItalic.otf") format("opentype");
+      font-weight: 500;
+      font-style: italic;
+      font-display: swap;
+      }
+      @font-face {
+      font-family: "Helvetica Neue";
+      src: url("/assets/fonts/helvetica-neue-5/HelveticaNeueBold.otf") format("opentype");
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+      }
+      @font-face {
+      font-family: "Helvetica Neue";
+      src: url("/assets/fonts/helvetica-neue-5/HelveticaNeueBoldItalic.otf") format("opentype");
+      font-weight: 700;
+      font-style: italic;
+      font-display: swap;
+      }
+      @font-face {
+      font-family: "Helvetica Neue";
+      src: url("/assets/fonts/helvetica-neue-5/HelveticaNeueBlack.otf") format("opentype");
+      font-weight: 900;
+      font-style: normal;
+      font-display: swap;
+      }
+      @font-face {
+      font-family: "Helvetica Neue";
+      src: url("/assets/fonts/helvetica-neue-5/HelveticaNeueBlackItalic.otf") format("opentype");
+      font-weight: 900;
+      font-style: italic;
+      font-display: swap;
+      }
+      body {
+      font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      }
+      @keyframes appleFill {
+      0% {
+      width: 0%;
+      }
+      100% {
+      width: 100%;
+      }
+      }
+    </style>
     <script type="text/javascript">
-      (function(c,l,a,r,i,t,y){
-          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
       })(window, document, "clarity", "script", "u4wrn5krvq");
     </script>
     <script type="application/ld+json">
@@ -285,36 +374,41 @@
     </script>
   </head>
   <body>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
-    <style>
-      @keyframes appleFill {
-      0% { width: 0%; }
-      100% { width: 100%; }
-      }
-    </style>
-    <div id="splash-screen" style="
+    <div
+      id="splash-screen"
+      style="
       position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       background-color: #112e51;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       z-index: 9999;
-      font-family: 'Lato', sans-serif;
+      font-family: 'Helvetica Neue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
       opacity: 1;
       transition: opacity 2s ease;
-      ">
-      <img id="seal-img" src="assets/uswds/img/seal.png" alt="" style="
+      "
+      >
+      <img
+        id="seal-img"
+        src="assets/uswds/img/seal.png"
+        alt=""
+        style="
         max-height: 250px;
         width: auto;
         opacity: 0;
         filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.5));
         transition: opacity 3s ease;
-        ">
+        "
+        />
       <div style="text-align: center; color: white; margin-top: 18px;">
-        <strong id="brand-name" style="
+        <strong
+          id="brand-name"
+          style="
           font-weight: 700;
           font-size: 1.9em;
           opacity: 0;
@@ -322,21 +416,26 @@
           transition: opacity 1s ease-out, transform 1s ease-out;
           display: block;
           margin-bottom: 6px;
-          ">
+          "
+          >
         LNB Federal Corporation
         </strong>
-        <em id="tagline" style="
+        <em
+          id="tagline"
+          style="
           font-style: italic;
           font-size: 0.8em;
           opacity: 0;
           transform: translateY(20px);
           transition: opacity 1s ease-out, transform 1s ease-out;
           display: block;
-          ">
+          "
+          >
         Empowering Government, Empowering Tomorrow
         </em>
       </div>
-      <div style="
+      <div
+        style="
         width: 220px;
         height: 6px;
         background: rgba(255, 255, 255, 0.18);
@@ -344,665 +443,834 @@
         margin-top: 35px;
         position: relative;
         overflow: hidden;
-        ">
-        <div style="
+        "
+        >
+        <div
+          style="
           height: 100%;
           width: 0%;
           background: white;
           border-radius: 3px;
           animation: appleFill 4.5s ease forwards;
-          box-shadow: 0 0 8px rgba(255,255,255,0.7);
-          "></div>
+          box-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+          "
+          ></div>
       </div>
     </div>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        setTimeout(() => {
-          document.getElementById("seal-img").style.opacity = 1;
-        }, 200);
-      
-        setTimeout(() => {
-          const brand = document.getElementById("brand-name");
-          brand.style.opacity = 1;
-          brand.style.transform = "translateY(0)";
-        }, 600);
-      
-        setTimeout(() => {
-          const tag = document.getElementById("tagline");
-          tag.style.opacity = 1;
-          tag.style.transform = "translateY(0)";
-        }, 900);
-      
-        setTimeout(() => {
-          const splash = document.getElementById("splash-screen");
-          splash.style.opacity = 0;
-          setTimeout(() => splash.style.display = "none", 2000);
-        }, 5000);
-      });
-    </script>
-  </body>
-  </div>
-  <div id="lnb-privacy-banner" style="
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    max-width: 1200px;
-    margin: auto;
-    background-color: #f1f1f1;
-    border: 1px solid #ccc;
-    border-left: 4px solid #112e51;
-    font-family: 'Lato', sans-serif;
-    font-size: 17px;
-    color: #000;
-    padding: 1.2em 1.6em 1.1em 1.6em;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    z-index: 10000;
-    border-radius: 4px;
-    opacity: 0;
-    transition: opacity 0.4s ease;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1.25em;
-    flex-wrap: wrap;
-    pointer-events: auto;
-    ">
-    <div style="flex: 1 1 auto; min-width: 250px;">
-      <strong><span style="color: red;">Access Warning</span></strong> You are accessing an LNB Federal Corporation Information System (IS). <!--This system is protected by the <a href="https://www.nsa.gov/About/Cybersecurity-Collaboration-Center/DIB-Cybersecurity-Services/nsa" style="text-decoration: none;" target="_blank" rel="noopener">National Security Agency (NSA) DIB Cybersecurity Services</a>.--> Activities on this system are monitored and may be recorded or disclosed to protect the interests of LNB Federal Corporation and the U.S. Government. By using this system, you consent to such monitoring. Unauthorized attempts to access, alter, or misuse this system are strictly prohibited and may result in legal consequences.
-      <br><br>
-      <strong>Disclaimer</strong> The appearance of U.S. Department of Defense visual information does not imply or constitute DoD endorsement.
+    <div
+      id="lnb-privacy-banner"
+      style="
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+      max-width: 1200px;
+      margin: auto;
+      background-color: #f1f1f1;
+      border: 1px solid #ccc;
+      border-left: 4px solid #112e51;
+      font-family: 'Helvetica Neue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      color: #000;
+      padding: 1.2em 1.6em 1.1em 1.6em;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      z-index: 10000;
+      border-radius: 4px;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      display: none;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1.25em;
+      flex-wrap: wrap;
+      pointer-events: auto;
+      "
+      >
+      <div style="flex: 1 1 auto; min-width: 250px;">
+        <strong><span style="color: red;">Access Warning</span></strong> You are accessing an LNB Federal Corporation Information System (IS). Activities on this system are monitored and may be recorded or disclosed to protect the interests of LNB Federal Corporation and the U.S. Government. By using this system, you consent to such monitoring. Unauthorized attempts to access, alter, or misuse this system are strictly prohibited and may result in legal consequences.
+        <br /><br />
+        <strong>Disclaimer</strong> The appearance of U.S. Department of Defense visual information does not imply or constitute DoD endorsement.
+      </div>
+      <button
+        onclick="dismissPrivacyBanner()"
+        style="
+        background-color: #112e51;
+        color: #fff;
+        border: none;
+        padding: 0.6em 1.2em;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 3px;
+        font-family: 'Helvetica Neue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+        "
+        >
+      Dismiss
+      </button>
     </div>
-    <button onclick="dismissPrivacyBanner()" style="
-      background-color: #112e51;
-      color: #fff;
-      border: none;
-      padding: 0.6em 1.2em;
-      font-size: 16px;
-      cursor: pointer;
-      border-radius: 3px;
-      ">Dismiss</button>
-  </div>
-  <script>
-    document.body.style.overflow = 'hidden';
+    <script>
+      document.body.style.overflow = "hidden";
       
-      const seal = document.getElementById('seal-img');
-      const brandName = document.getElementById('brand-name');
-      const tagline = document.getElementById('tagline');
-      const splash = document.getElementById('splash-screen');
-      const privacyBanner = document.getElementById('lnb-privacy-banner');
-      
+      const seal = document.getElementById("seal-img");
+      const brandName = document.getElementById("brand-name");
+      const tagline = document.getElementById("tagline");
+      const splash = document.getElementById("splash-screen");
+      const privacyBanner = document.getElementById("lnb-privacy-banner");
       
       setTimeout(() => {
-        seal.style.opacity = '1';
+        seal.style.opacity = "1";
       
         setTimeout(() => {
-          brandName.style.opacity = '1';
-          brandName.style.transform = 'translateY(0)';
+          brandName.style.opacity = "1";
+          brandName.style.transform = "translateY(0)";
         }, 1000);
       
         setTimeout(() => {
-          tagline.style.opacity = '1';
-          tagline.style.transform = 'translateY(0)';
+          tagline.style.opacity = "1";
+          tagline.style.transform = "translateY(0)";
         }, 1700);
       
         setTimeout(() => {
-          splash.style.opacity = '0';
-          splash.style.pointerEvents = 'none';
+          splash.style.opacity = "0";
+          splash.style.pointerEvents = "none";
       
           setTimeout(() => {
-            splash.style.display = 'none';
+            splash.style.display = "none";
+            document.body.style.overflow = "auto";
       
-            
-            document.body.style.overflow = 'auto';
-      
-          
-            privacyBanner.style.display = 'flex';
-            setTimeout(() => {
-              privacyBanner.style.opacity = '1';
-            }, 50);
-      
+            if (privacyBanner) {
+              privacyBanner.style.display = "flex";
+              setTimeout(() => {
+                privacyBanner.style.opacity = "1";
+              }, 50);
+            }
           }, 2000);
         }, 7000);
       }, 500);
       
       function dismissPrivacyBanner() {
-        privacyBanner.style.opacity = '0';
+        if (!privacyBanner) return;
+        privacyBanner.style.opacity = "0";
         setTimeout(() => {
-          privacyBanner.style.display = 'none';
+          privacyBanner.style.display = "none";
         }, 400);
       }
-  </script>
-  <script>
-    const privacyBanner = document.getElementById('privacy-banner');
-    document.addEventListener('DOMContentLoaded', () => {
-      if (privacyBanner) {
-        privacyBanner.style.display = 'flex';
-        privacyBanner.style.opacity = '1';
-      }
-    });
-  </script>
-  <a class="usa-skipnav" href="#main-content"> Skip to main content </a>
-  <h1 class="usa-sr-only">LNB Federal Corporation - Defense, Space, & Cyber Systems</h1>
-  <section class="usa-banner">
-    <div class="usa-accordion">
-      <header class="usa-banner-header">
-        <div class="usa-grid usa-banner-inner">
-          <img src="assets/uswds/img/favicons/favicon-flag.png" alt="U.S. Flag">
-          <p><b>LNB Federal Corporation</b> - <b>U.S Department of Defense (DoD) Contractor</b></p>
-          <button class="usa-accordion-button usa-banner-button" 
-            aria-expanded="false" 
-            aria-controls="gov-banner" 
-            style="text-decoration:none; border-bottom:0; outline:none;">
-          <span style="text-decoration:none; border-bottom:0; color:red; font-weight:bold;">Notice</span>
-          </button>
-        </div>
-      </header>
-    </div>
-    </header>
-    <div class="usa-banner-content usa-grid usa-accordion-content" id="gov-banner">
-      <div class="usa-banner-guidance-gov usa-width-one-half">
-        <img class="usa-banner-icon usa-media_block-img" src="assets/uswds/img/icon-dot-gov.svg" alt="Dot gov">
-        <div class="usa-media_block-body">
-          <p>
-            <strong> E-Verify </strong>
-            <br> Federal law requires LNB Federal Corporation to authenticate the identities and employment eligibility of all individuals joining our workforce in the United States. LNB Federal Corporation will duly share information from each new employee's Form I-9 with the Social Security Administration (SSA) and, if required, the Department of Homeland Security (DHS), to confirm work authorization.
-          </p>
-        </div>
+    </script>
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+    <h1 class="usa-sr-only">LNB Federal Corporation - Defense, Space, & Cyber Systems</h1>
+    <section class="usa-banner">
+      <div class="usa-accordion">
+        <header class="usa-banner-header">
+          <div class="usa-grid usa-banner-inner">
+            <img src="assets/uswds/img/favicons/favicon-flag.png" alt="U.S. Flag" />
+            <p><b>LNB Federal Corporation</b> - <b>U.S Department of Defense (DoD) Contractor</b></p>
+            <button
+              class="usa-accordion-button usa-banner-button"
+              aria-expanded="false"
+              aria-controls="gov-banner"
+              style="text-decoration: none; border-bottom: 0; outline: none;"
+              >
+            <span style="text-decoration: none; border-bottom: 0; color: red; font-weight: bold;">Notice</span>
+            </button>
+          </div>
+        </header>
       </div>
-      <div class="usa-banner-guidance-ssl usa-width-one-half">
-        <img class="usa-banner-icon usa-media_block-img" src="assets/uswds/img/icon-https.svg" alt="HTTPS secure connection icon">
-        <div class="usa-media_block-body">
-          <p>
-            <strong> Controlled Information </strong>
-            <br> Users who access any of LNB Federal Corporation's systems must comply with LNB Federal's usage guidelines and are required to protect all information in accordance with the Acceptable Use of IT Assets Policy. This may include U.S. Government (USG) Controlled Information.
-          </p>
-        </div>
-      </div>
-    </div>
-    </div>
-  </section>
-  <header class="usa-header usa-header-extended" role="banner">
-    <div class="header-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-12 col-lg-12 col-md-12">
-            <div class="inner-content clearfix">
-              <div class="header-left float-left">
-                <div class="logo">
-                  <a href="index.html" target="_blank" rel="noopener">
-                  <img src="assets/uswds/img/favicons/logo.png" alt="LNB Federal Corporation logo">
-                  </a>
-                </div>
-              </div>
-              <nav role="navigation" class="usa-nav">
-                <div class="usa-nav-inner">
-                  <button class="usa-nav-close">
-                  <img src="/assets/img/close.svg" alt="Close navigation menu">
-                  </button>
-                  <ul class="usa-nav-primary usa-accordion">
-                    <li>
-                      <a class="usa-nav-link" href="https://aws.amazon.com/startups/showcase/startup-details/3b18a335-d189-4e00-b6a6-788400f5bc9e" target="_blank" rel="noopener">
-                      <span>AWS Startups</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="usa-nav-link" href="https://aws.amazon.com/marketplace/seller-profile?id=seller-yd5mb6pympu2k" target="_blank" rel="noopener">
-                      <span>AWS Marketplace</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="usa-nav-link" href="https://myapps.microsoft.com/?whr=lnbfederal.com" target="_blank" rel="noopener">
-                      <span>Employee Login</span>
-                      </a>
-                    </li>
-                    <li>
-                      <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="extended-nav-section-one">
-                      <span>Employee Resources</span>
-                      </button>
-                      <ul id="extended-nav-section-one" class="usa-nav-submenu">
-                        <!-- IT & Communications -->
-                        <li><a class="usa-nav-link" href="https://outlook.office.com/mail/?realm=lnbfederal.com" target="_blank" rel="noopener"><span>Webmail</span></a></li>
-                        <li><a class="usa-nav-link" href="https://lnbfederal.sharepoint.com" target="_blank" rel="noopener"><span>Intranet</span></a></li>
-                        <li><a class="usa-nav-link" href="https://my.adobeconnect.com" target="_blank" rel="noopener"><span>Adobe Connect</span></a></li>
-                        <li><a class="usa-nav-link" href="https://piee.eb.mil" target="_blank" rel="noopener"><span>PIEE</span></a></li>
-                        <!-- Project & Business Systems -->
-                        <li><a class="usa-nav-link" href="https://experiencecenter.unanet.com" target="_blank" rel="noopener"><span>ERP</span></a></li>
-                        <li><a class="usa-nav-link" href="https://iq.govwin.com/cas/login" target="_blank" rel="noopener"><span>Production</span></a></li>
-                        <li><a class="usa-nav-link" href="https://github.com/lnbfederal" target="_blank" rel="noopener"><span>GitHub Enterprise</span></a></li>
-                        <li><a class="usa-nav-link" href="https://www.bgov.com/auth/sign_in" target="_blank" rel="noopener"><span>Bloomberg Government</span></a></li>
-                        <!-- HR & Benefits -->
-                        <li><a class="usa-nav-link" href="https://my.adp.com" target="_blank" rel="noopener"><span>Payroll</span></a></li>
-                        <li><a class="usa-nav-link" href="https://my.emblemhealth.com" target="_blank" rel="noopener"><span>EmblemHealth</span></a></li>
-                        <li><a class="usa-nav-link" href="https://my.guideline.com" target="_blank" rel="noopener"><span>401(k)</span></a></li>
-                        <li><a class="usa-nav-link" href="https://secure.theworknumber.talx.com" target="_blank" rel="noopener"><span>Employment Verification</span></a></li>
-                        <!-- Finance & Travel -->
-                        <li><a class="usa-nav-link" href="https://www.ipp.gov" target="_blank" rel="noopener"><span>IPP</span></a></li>
-                        <li><a class="usa-nav-link" href="https://access.amexgbt.com" target="_blank" rel="noopener"><span>AMEX Global Business Travel</span></a></li>
-                        <li><a class="usa-nav-link" href="https://login.xero.com" target="_blank" rel="noopener"><span>Xero</span></a></li>
-                        <!-- Training & Development -->
-                        <li><a class="usa-nav-link" href="https://id.dau.edu" target="_blank" rel="noopener"><span>Continuous Learning Center</span></a></li>
-                      </ul>
-                    </li>
-                    </li>
-                  </ul>
-                  </li>
-                  </ul>
-                </div>
-              </nav>
-            </div>
+      <div class="usa-banner-content usa-grid usa-accordion-content" id="gov-banner">
+        <div class="usa-banner-guidance-gov usa-width-one-half">
+          <img class="usa-banner-icon usa-media_block-img" src="assets/uswds/img/icon-dot-gov.svg" alt="Dot gov" />
+          <div class="usa-media_block-body">
+            <p>
+              <strong>E-Verify</strong>
+              <br />
+              Federal law requires LNB Federal Corporation to authenticate the identities and employment eligibility of all individuals joining our workforce in the United States. LNB Federal Corporation will duly share information from each new employee's Form I-9 with the Social Security Administration (SSA) and, if required, the Department of Homeland Security (DHS), to confirm work authorization.
+            </p>
           </div>
         </div>
-      </div>
-    </div>
-  </header>
-  <div class="usa-overlay"></div>
-  <section class="usa-hero" style="background-image: url('assets/uswds/img/hero.png')">
-    <div class="usa-grid">
-      <div class="usa-hero-callout usa-section-dark">
-        <h2>
-          <span class="usa-hero-callout-alt"> Information technology built for the </span> Federal Government
-        </h2>
-        <p> We support America's most critical missions with cutting-edge solutions that meet the future head-on. </p>
-        <a class="usa-button" href="mailto:info@lnbfederal.com"> Define Possible </a>
-      </div>
-    </div>
-  </section>
-  <section class="usa-grid usa-section">
-    <div class="usa-width-one-third">
-      <h2> About Us </h2>
-    </div>
-    <div class="usa-width-two-thirds">
-      <p>
-        LNB Federal Corporation is a U.S. Department of Defense contractor headquartered in Wilmington, Delaware, specializing in delivering mission-critical IT solutions.
-        <br><br>Our capabilities range across Artificial Intelligence, Blockchain, Cybersecurity, DevSecOps, Open Source, Modeling, Simulation and other technology consulting services. With an intimate understanding of your mission, LNB Federal deploys the best solution for your unique environment and selects the right partners and products for high-velocity outcomes.
-        <br><br>More than just trusted advisors and capable technologists, we’re your all-in-one acceleration architects, with a focus on helping you enhance mission readiness and resilience faster through the application of powerful emerging technologies.
-      </p>
-    </div>
-  </section>
-  <section class="usa-grid usa-section" id="andromeda-section">
-    <div class="usa-width-one-third">
-      <h2> Microsoft for Startups & AWS Startups</h2>
-    </div>
-    <div class="usa-width-two-thirds">
-      <p>
-        <strong>LNB Federal</strong> has been accepted into both the <strong>Microsoft for Startups Founders Hub</strong> and the <strong>AWS Startups</strong> programs. These programs have provided Azure and AWS cloud infrastructure credits, along with access to enterprise-grade development and security tools valued at <strong>over $150,000</strong> supporting our efforts to accelerate innovation across our upcoming product line. Through these programs, we have also gained access to advanced supercomputing capabilities, industry-leading security and privacy features, and the latest AI models and developer tools, enabling us to build our next-generation platform, Andromeda, and stay ahead of the curve.
-      </p>
-      <b>Introducing Andromeda</b><br><br>
-      Andromeda is a cloud agnostic cybersecurity and compliance automation platform built for the U.S. Department of Defense agencies. It simplifies the Risk Management Framework by automating control validation, evidence collection, and continuous monitoring across standards such as FISMA, NIST SP 800 53 Revision 5, FedRAMP, CMMC 2.0, and DFARS.
-      <br><br>
-      Supporting Microsoft Azure Government, AWS GovCloud, and future Impact Level 4 on premise workloads, Andromeda applies Infrastructure as Code, role based access control, and compliance as code to enforce security throughout the lifecycle. It integrates with SIEM and SOAR platforms to provide real time telemetry, anomaly detection, and automated policy enforcement.
-      <br><br>
-      With modular APIs, encryption aligned with FIPS 140 3 standards, and container orchestration using Kubernetes, Andromeda supports Zero Trust architecture and meets the expectations of Executive Order directives. It also enables SCAP validation for STIG compliance and integrates with GitOps workflows to support declarative deployments across development, test, and production environments.
-      <div style="margin-top: 30px;">
-        <a href="https://aws.amazon.com/startups/showcase/startup-details/3b18a335-d189-4e00-b6a6-788400f5bc9e" 
-          target="_blank" 
-          style="display: inline-block; background-color: #112e51; color: #ffffff; font-family: Lato, sans-serif; font-size: 16px; padding: 12px 24px; text-decoration: none; border-radius: 4px;">
-        View at AWS Startups 
-        </a>
-      </div>
-    </div>
-  </section>
-  <section class="usa-section usa-section-dark usa-graphic_list">
-    <div class="usa-grid usa-graphic_list-row">
-      <span class="usa-hero-callout-alt">
-        <h2> Our Services </h2>
-      </span>
-      <br>
-      <div class="usa-width-one-half usa-media_block">
-        <div class="usa-media_block-body">
-          <h3> Enterprise Licensing & Cloud Services </h3>
-          <p> Our core competency has been supporting Software Enterprise Agreements and delivering FedRAMP cloud solutions to the U.S. Government agencies. LNB Federal is subject matter expert when it comes to managing service enrollments for coveted world-class cyber solutions from Booz Allen, Dell, L3 Harris, MAK Technologies, Mirion, Northrop Grumman, Raytheon Solipsys, Wind River and more. We've simplified our licensing approach for you. </p>
-        </div>
-      </div>
-      <div class="usa-width-one-half usa-media_block">
-        <div class="usa-media_block-body">
-          <h3> Bespoke Software Development </h3>
-          <p> Federal organizations require modern development practices in order to deliver capabilities quickly with complete confidence in quality and security. We drive towards a centralized yet distributed model so that different missions can quickly build more robust capabilities through hardened and reusable containers and source code repositories that accelerate time to deployment and ensure that the mission (not the technical process) is the focus. </p>
-        </div>
-      </div>
-    </div>
-    <div class="usa-grid usa-graphic_list-row">
-      <div class="usa-width-one-half usa-media_block">
-        <div class="usa-media_block-body">
-          <h3> IT Professional Services </h3>
-          <p> LNB Federal connects Government employers to staff positions in 54151S and 54151HACS labor category. On-demand talent for DoW-IT projects requiring candidates to posses or are able to obtain a Government security clearance, maintain a CAC Card, and adhere to Directive 8570.01-M. Includes candidates in the pool possessing or are able to obtain Top Secret Clearance and SCI Eligibility and are willing to undergo a Counterintelligence polygraph. </p>
-        </div>
-      </div>
-      <div class="usa-width-one-half usa-media_block">
-        <div class="usa-media_block-body">
-          <h3> Cybersecurity Solutions </h3>
-          <p> Cyberattacks are on the rise across all levels of Government, posing a significant risk to national security. Public sector agencies require cybersecurity tools to protect critical data at every endpoint. Our dedicated team at LNB Federal specializes in providing federal agencies with security solutions to safeguard their cyber ecosystem. Our team assists our customers in building cyber solutions to meet the evolving cybersecurity requirements. </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="usa-grid usa-section">
-    <div class="usa-width-one-third">
-      <h2> Resilient & Mission-focused Cyber Solutions </h2>
-    </div>
-    <div class="usa-width-two-thirds">
-      <p>
-        <b>Cybersecurity Maturity Program</b>
-        <br>The world of cybersecurity is ever-changing and cyberattacks continue to expand in scale and scope. It’s nearly impossible to single-handedly keep up with the evolving threat environment and cybersecurity best practices, especially when many information security and risk management teams are juggling competing priorities with limited resources.
-        <br><br>LNB Federal can help you alleviate this burden by giving you access to expertise and resources you need to advance cybersecurity culture, develop programs and processes, and defend your organization. We partner with you to create and help you sustain a cybersecurity strategy that can realistically and cost-effectively advance your cyber maturity and improve your cyber resilience.
-        <br><br>
-        <b>Government Cybersecurity Solutions</b>
-        <br>LNB Federal has established strategic, long-term relationships with the industry’s leading cybersecurity manufacturers to offer Government entities proven, cost-effective protection for infrastructures, networks, and assets. We hold various contracts that enable us to serve public sector customers throughout the United States, including Agency-specific agreements and Government-wide acquisition vehicles.
-        <br><br>Our exclusive partners include, but are not limited to, BeyondTrust, Cobalt, Commvault, Fortra, Imperva, Netwrix, Palo Alto Networks, RSA, Tenable.
-      </p>
-    </div>
-  </section>
-  <section class="usa-grid usa-section">
-    <div class="usa-width-one-third">
-      <h2> Digital Battlespace </h2>
-    </div>
-    <div class="usa-width-two-thirds">
-      <p>
-        <b>Integrated Tech for C4ISR</b>
-        <br>Digital Battlespace solutions speed up the decision cycle by delivering smart technologies to empower a truly joint force. We provide modular, scalable, and flexible solutions to seize decision advantage faster. These solutions are designed to align with the Department of Defense (DoD) mission, creating systems that are open, integrated, and smarter from enterprise to edge. These solutions focus on addressing the DoW’s most vital challenges in three key areas:
-        <br><br>- Command, Control, and Communications (C3) and Battle Management
-        <br>- Intelligence, Surveillance, and Reconnaissance (ISR) and Electronic Warfare
-        <br>- Warfighter Systems and Human-Machine Teaming
-        <br><br> Gain the advantage of integrated mission expertise, innovative partnerships, and technical talent for mission success. By using truly open architectures and Government-owned APIs, this keeps the DoW in control of its data, insights, and analytics.
-        <br><br>
-        <b>Modeling & Simulation Solutions</b>
-        <br>LNB Federal provides military simulation technology and training systems. We offer a suite of Commercial-Off-the-Shelf (COTS) simulation software to Governments, system integrators, and customers nationwide. We excel as a partner in delivering tailored solutions to unique training challenges. Our solutions are portable, easy to use and maintain, visually appealing, and able to meet individual and collective training requirements.
-        <br><br>You can fill your synthetic environment with urban, battlefield, maritime, air, and space activity using powerful and flexible computer-generated forces platform. Our partner's top product line can simulate the full range of domains that coexist as a whole on Earth - from the ocean floor to the elliptical orbits around our planet. Simulate your entities, their relationships to one another, the terrains they live on, the localized weather systems and the environmental effectors to meet your simulation needs.
-      </p>
-    </div>
-  </section>
-  <section class="usa-grid usa-section">
-    <div class="usa-width-one-third">
-      <h2> Bespoke Software Development </h2>
-    </div>
-    <div class="usa-width-two-thirds">
-      <p> 
-        Digital transformation should be a constant evolution, not a one-time target. In today's dynamic technology landscape, accelerating capabilities with continuous and rapid software development is a necessity.
-        <br><br>LNB Federal enables organizations to enhance and jumpstart software development efforts to meet mission and business objectives. With the need for faster build, feedback, and deployment, we make it possible to accelerate and automate at every phase of the delivery lifecycle. Our teams use scaled agile practices and DevSecOps pipelines, along with open, cloud-native, and portable architectures to create digital environments that are user-centric, scalable, and modular.
-        <br><br>In addition, we reinforce our software solutions with data analytics and intelligence-grade cybersecurity for systems that organizations can trust for mission resiliency. Our open source DevSecOps capability - Solutions Delivery Platform enables teams to dramatically reduce setup time and to continuously incorporate security into the software development process.
-      </p>
-    </div>
-  </section>
-  <section class="usa-section usa-section-dark usa-graphic_list">
-    <div class="usa-grid usa-graphic_list-row">
-      <span class="usa-hero-callout-alt">
-        <h2> Who We Serve </h2>
-      </span>
-      <br>
-      <div class="usa-width-one-half usa-media_block">
-        <div class="usa-media_block-body">
-          <h3> U.S. Defense </h3>
-          <p> The U.S. Department of Defense (DoD) is responsible for protecting national security at home and abroad. LNB Federal deliver leading technology solutions that help the Defense industry build agile resources and maintain security while advancing warfighter IT capabilities. </p>
-        </div>
-      </div>
-      <div class="usa-width-one-half usa-media_block">
-        <div class="usa-media_block-body">
-          <h3> Civil Government </h3>
-          <p> Whether ensuring citizen safety, security, and well-being or boosting national competitiveness, we work shoulder-to-shoulder with civil Government clients to help them deliver on their public service missions. LNB Federal empowers civil agencies to achieve better and faster mission outcomes for the nation and its people. </p>
-        </div>
-      </div>
-    </div>
-    <div class="usa-grid usa-graphic_list-row">
-      <div class="usa-width-one-half usa-media_block">
-        <div class="usa-media_block-body">
-          <h3> UN Specialized Agencies </h3>
-          <p> The UN Specialized Agencies tackles some of the world’s greatest challenges. By integrating our unique knowledge and capabilities in technology, we consult and develop innovative solutions to turn their ambitious concepts into real projects, helping them implement them at the grassroots level. </p>
-        </div>
-      </div>
-      <div class="usa-width-one-half usa-media_block">
-        <div class="usa-media_block-body">
-          <h3> Health </h3>
-          <p> With our holistic digital approach, deep expertise in cloud platforms and infrastructure, and a thorough understanding of the health sector’s unique missions and challenges, we help our health clients navigate the technical complexities of enterprise IT modernization, no matter where they are in the process. </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="usa-section usa-section-light usa-graphic_list">
-    <div class="usa-grid usa-graphic_list-row">
-      <span class="usa-hero-callout-alt-dark">
-        <h2> Here are four reasons why you want to work with us </h2>
-      </span>
-      <br>
-      <div class="usa-width-one-half usa-media_block">
-        <div class="usa-media_block-body">
-          <h3> Ability to Close Deals </h3>
-          <p> Whether a simple resale or a challenging transaction involving a complex financing structure, we’ll help Government and industry get the deal done in an efficient and timely manner. </p>
-        </div>
-      </div>
-      <div class="usa-width-one-half usa-media_block">
-        <div class="usa-media_block-body">
-          <h3> Strong Partner Relationships </h3>
-          <p> We have strong relationships with manufacturers that we’ve worked with for many years. Our relationships with distribution partners help us to deliver complex, multi-vendor solutions. </p>
-        </div>
-      </div>
-    </div>
-    <div class="usa-grid usa-graphic_list-row">
-      <div class="usa-width-one-half usa-media_block">
-        <div class="usa-media_block-body">
-          <h3> Culture of Excellence </h3>
-          <p> Our commitment to integrity and fairness guides all of our business transactions. We are responsive, attentive, and committed to meeting our clients’ needs. </p>
-        </div>
-      </div>
-      <div class="usa-width-one-half usa-media_block">
-        <div class="usa-media_block-body">
-          <h3> Breadth & Depth of Offerings </h3>
-          <p> LNB Federal offers a portfolio of over 300 enterprise IT solutions and has access to over 50 on-demand contractual IT talents, all supported by a dedicated sales and technology team.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <footer class="usa-footer usa-footer-medium" role="contentinfo">
-    <section class="usa-section usa-section-dark usa-graphic_list">
-      <div class="usa-grid usa-graphic_list-row">
-        <span class="usa-hero-callout-alt">
-          <h2> Some agencies we’ve worked with </h2>
-        </span>
-        <br>
-        <div class="usa-width-one-half usa-media_block">
+        <div class="usa-banner-guidance-ssl usa-width-one-half">
+          <img class="usa-banner-icon usa-media_block-img" src="assets/uswds/img/icon-https.svg" alt="HTTPS secure connection icon" />
           <div class="usa-media_block-body">
-            <h3><a href="https://www.nasa.gov" style="text-decoration: none;" target="_blank" rel="noopener">NASA</a></h3>
-          </div>
-        </div>
-        <div class="usa-width-one-half usa-media_block">
-          <div class="usa-media_block-body">
-            <h3><a href="https://www.un.org" style="text-decoration: none;" target="_blank" rel="noopener">United Nations</a></h3>
-          </div>
-        </div>
-      </div>
-      <div class="usa-grid usa-graphic_list-row">
-        <div class="usa-width-one-half usa-media_block">
-          <div class="usa-media_block-body">
-            <h3><a href="https://www.lockheedmartin.com" style="text-decoration: none;" target="_blank" rel="noopener">Lockheed Martin</a></h3>
-          </div>
-        </div>
-        <div class="usa-width-one-half usa-media_block">
-          <div class="usa-media_block-body">
-            <h3><a href="https://www.northropgrumman.com" style="text-decoration: none;" target="_blank" rel="noopener">Northrop Grumman</a></h3>
-          </div>
-        </div>
-      </div>
-      <div class="usa-grid usa-graphic_list-row">
-        <div class="usa-width-one-half usa-media_block">
-          <div class="usa-media_block-body">
-            <h3><a href="https://www.boozallen.com" style="text-decoration: none;" target="_blank" rel="noopener">Booz Allen Hamilton</a></h3>
-          </div>
-        </div>
-        <div class="usa-width-one-half usa-media_block">
-          <div class="usa-media_block-body">
-            <h3><a href="https://www.navair.navy.mil" style="text-decoration: none;" target="_blank" rel="noopener">Naval Air Systems Command</a></h3>
-          </div>
-        </div>
-      </div>
-      <div class="usa-grid usa-graphic_list-row">
-        <div class="usa-width-one-half usa-media_block">
-          <div class="usa-media_block-body">
-            <h3><a href="https://www.navsea.navy.mil" style="text-decoration: none;" target="_blank" rel="noopener">Naval Surface Warfare Center</a></h3>
-          </div>
-        </div>
-        <div class="usa-width-one-half usa-media_block">
-          <div class="usa-media_block-body">
-            <h3><a href="https://www.afrl.af.mil" style="text-decoration: none;" target="_blank" rel="noopener">Air Force Research Laboratory</a></h3>
-          </div>
-        </div>
-      </div>
-      <div class="usa-grid usa-graphic_list-row">
-        <div class="usa-width-one-half usa-media_block">
-          <div class="usa-media_block-body">
-            <h3><a href="https://www.marcorsyscom.marines.mil" style="text-decoration: none;" target="_blank" rel="noopener">Marine Corps Systems Command</a></h3>
-          </div>
-        </div>
-        <div class="usa-width-one-half usa-media_block">
-          <div class="usa-media_block-body">
-            <h3><a href="https://www.socom.mil" style="text-decoration: none;" target="_blank" rel="noopener">U.S. Special Operations Command</a></h3>
+            <p>
+              <strong>Controlled Information</strong>
+              <br />
+              Users who access any of LNB Federal Corporation's systems must comply with LNB Federal's usage guidelines and are required to protect all information in accordance with the Acceptable Use of IT Assets Policy. This may include U.S. Government (USG) Controlled Information.
+            </p>
           </div>
         </div>
       </div>
     </section>
-  </footer>
-  <main id="main-content" class="usa-grid usa-section usa-content usa-layout-docs">
-    <h3 id="section-heading">Corporate Information</h3>
-    <b>Entity Name:</b> LNB Federal Corporation  
-    <br>
-    <b>State of Incorporation:</b> Delaware, United States  
-    <br>
-    <b>File Number - Delaware Division of Corporations:</b> 10201290 
-    <br>
-    <b>Legal Structure:</b> C Corporation
-    <br> 
-    <b>Tax Classification</b> Corporate Entity Not Tax Exempt  
-    <br>
-    <h3>Government Identifiers</h3>
-    <h4>🇺🇸 United States Government</h4>
-    <b>CAGE:</b> 12WN4  
-    <br>
-    <b>UEI:</b> NG4XZH3GUA48  
-    <br>
-    <b>NAICS:</b> Computer Systems Design Services (541512), Software Publishers (511210)  
-    <br>
-    <h4>🇬🇧 UK Government (Crown Commercial Service & Ministry of Defense)</h4>
-    <b>D-U-N-S®:</b> 119520524  
-    <br>
-    <h4>🇸🇬 Government of Singapore</h4>
-    <b>Trading Partner Reference Number:</b> Y305448  
-    <br>
-    <b>SSIC:</b> Software Development (62011), Research and Experimental Development on Engineering (72101)  
-    <br>
-    <h4>🇺🇳 United Nations</h4>
-    <b>UNGM Number:</b> 1101913  
-    <br>
-    <h3>E-Biz POC</h3>
-    <h4>Government Liaison</h4>
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#112e51" viewBox="0 0 24 24" style="vertical-align:middle; margin-right:4px;"></svg>
-    <b>Laxmi Narayan Behera</b>  
-    <br>
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#112e51" viewBox="0 0 24 24" style="vertical-align:middle; margin-right:4px;">
-      <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 
-        1.1.9 2 2 2h16c1.1 0 2-.9 
-        2-2V6c0-1.1-.9-2-2-2zm0 
-        4-8 5-8-5V6l8 5 8-5v2z"/>
-    </svg>
-    <a href="mailto:lnb@lnbfederal.com">lnb@lnbfederal.com</a>  
-    <br>
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#112e51" viewBox="0 0 24 24" style="vertical-align:middle; margin-right:4px;">
-      <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.21.49 2.53.76 3.88.76a1 1 0 011 1v3.5a1 1 0 01-1 1C10.07 21.5 2.5 13.93 2.5 4a1 1 0 011-1H7a1 1 0 011 1c0 1.35.27 2.67.76 3.88a1 1 0 01-.21 1.11l-2.93 2.8z"/>
-    </svg>
-    <a href="tel:+12128146555">(212) 814-6555</a>  
-    <br>
-    <h4>Business Liaison</h4>
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#112e51" viewBox="0 0 24 24" style="vertical-align:middle; margin-right:4px;"></svg>
-    <b>Madison Moore</b>  
-    <br>
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#112e51" viewBox="0 0 24 24" style="vertical-align:middle; margin-right:4px;">
-      <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 
-        1.1.9 2 2 2h16c1.1 0 2-.9 
-        2-2V6c0-1.1-.9-2-2-2zm0 
-        4-8 5-8-5V6l8 5 8-5v2z"/>
-    </svg>
-    <a href="mailto:madison.moore@lnbfederal.com">madison.moore@lnbfederal.com</a>  
-    <br>
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#112e51" viewBox="0 0 24 24" style="vertical-align:middle; margin-right:4px;">
-      <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.21.49 2.53.76 3.88.76a1 1 0 011 1v3.5a1 1 0 01-1 1C10.07 21.5 2.5 13.93 2.5 4a1 1 0 011-1H7a1 1 0 011 1c0 1.35.27 2.67.76 3.88a1 1 0 01-.21 1.11l-2.93 2.8z"/>
-    </svg>
-    <a href="tel:+16462462102">(646) 246-2102</a>  
-    <br>
-  </main>
-  <section class="usa-section usa-section-dark usa-graphic_list">
-    <div class="usa-grid usa-graphic_list-row">
-      <span class="usa-hero-callout-alt">
-        <h3> Ethics Helpline </h3>
-      </span>
-      <b>
-      <a href="https://www.worker.gov" style="text-decoration: none;">Worker.gov</a>
-      </b>
-      <br>
-      <b>
-      <a href="https://www.oversight.gov" style="text-decoration: none;">Oversight.gov</a>
-      </b>
-      <br>
-      <b>
-      <a href="https://www.eeoc.gov/know-your-rights-workplace-discrimination-illegal" style="text-decoration: none;">Know Your Rights - EEOC</a>
-      </b>
-      <br>
-      <b>
-      <a href="https://whistleblower.house.gov" style="text-decoration: none;">Office of the Whistleblower Ombuds</a>
-      </b>
-      <br>
-      <b>
-      <a href="https://www.un.org/ombudsman" style="text-decoration: none;">UN Ombudsman and Mediation Services </a>
-      <br>  
-      <b>
-      <a href="https://www.dodig.mil" style="text-decoration: none;">Department of Defense Office of Inspector General</a>
-      </b>
-      </b>
-    </div>
-  </section>
-  <footer class="usa-footer usa-footer-medium" role="contentinfo">
-    <div class="usa-footer-secondary_section">
-      <div class="usa-grid">
-        <div class="usa-footer-logo usa-width-one-half">
-          <img src="assets/uswds/img/favicons/logo.png" alt="LNB Federal Corporation logo">
-          <h3 class="usa-footer-logo-heading"></h3>
-        </div>
-        <div class="usa-footer-contact-links usa-width-one-half">
-          <h3 class="usa-footer-contact-heading">LNB Federal Corporation</h3>
-          <address>
-            <div class="usa-footer-primary-content usa-footer-contact_info">
-              <p>
-                <svg xmlns="http://www.w3.org/2000/svg" 
-                  width="16" height="16" 
-                  fill="#112e51" 
-                  viewBox="0 0 24 24" 
-                  style="vertical-align:middle; margin-right:6px;">
-                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 
-                    9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
-                </svg>
-                800 N King St, Suite 304, #3749, Wilmington, Delaware 19801
-              </p>
+    <header class="usa-header usa-header-extended" role="banner">
+      <div class="header-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12">
+              <div class="inner-content clearfix">
+                <div class="header-left float-left">
+                  <div class="logo">
+                    <a href="index.html" target="_blank" rel="noopener">
+                    <img src="assets/uswds/img/favicons/logo.png" alt="LNB Federal Corporation logo" />
+                    </a>
+                  </div>
+                </div>
+                <nav role="navigation" class="usa-nav">
+                  <div class="usa-nav-inner">
+                    <button class="usa-nav-close">
+                    <img src="/assets/img/close.svg" alt="Close navigation menu" />
+                    </button>
+                    <ul class="usa-nav-primary usa-accordion">
+                      <li>
+                        <a
+                          class="usa-nav-link"
+                          href="https://aws.amazon.com/startups/showcase/startup-details/3b18a335-d189-4e00-b6a6-788400f5bc9e"
+                          target="_blank"
+                          rel="noopener"
+                          >
+                        <span>AWS Startups</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="usa-nav-link"
+                          href="https://aws.amazon.com/marketplace/seller-profile?id=seller-yd5mb6pympu2k"
+                          target="_blank"
+                          rel="noopener"
+                          >
+                        <span>AWS Marketplace</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="usa-nav-link" href="https://myapps.microsoft.com/?whr=lnbfederal.com" target="_blank" rel="noopener">
+                        <span>Employee Login</span>
+                        </a>
+                      </li>
+                      <li>
+                        <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="extended-nav-section-one">
+                        <span>Employee Resources</span>
+                        </button>
+                        <ul id="extended-nav-section-one" class="usa-nav-submenu">
+                          <li>
+                            <a
+                              class="usa-nav-link"
+                              href="https://outlook.office.com/mail/?realm=lnbfederal.com"
+                              target="_blank"
+                              rel="noopener"
+                              ><span>Webmail</span></a
+                              >
+                          </li>
+                          <li>
+                            <a class="usa-nav-link" href="https://lnbfederal.sharepoint.com" target="_blank" rel="noopener"><span>Intranet</span></a>
+                          </li>
+                          <li>
+                            <a class="usa-nav-link" href="https://my.adobeconnect.com" target="_blank" rel="noopener"><span>Adobe Connect</span></a>
+                          </li>
+                          <li>
+                            <a class="usa-nav-link" href="https://piee.eb.mil" target="_blank" rel="noopener"><span>PIEE</span></a>
+                          </li>
+                          <li>
+                            <a class="usa-nav-link" href="https://experiencecenter.unanet.com" target="_blank" rel="noopener"><span>ERP</span></a>
+                          </li>
+                          <li>
+                            <a class="usa-nav-link" href="https://iq.govwin.com/cas/login" target="_blank" rel="noopener"><span>Production</span></a>
+                          </li>
+                          <li>
+                            <a class="usa-nav-link" href="https://github.com/lnbfederal" target="_blank" rel="noopener"><span>GitHub Enterprise</span></a>
+                          </li>
+                          <li>
+                            <a class="usa-nav-link" href="https://www.bgov.com/auth/sign_in" target="_blank" rel="noopener"
+                              ><span>Bloomberg Government</span></a
+                              >
+                          </li>
+                          <li>
+                            <a class="usa-nav-link" href="https://my.adp.com" target="_blank" rel="noopener"><span>Payroll</span></a>
+                          </li>
+                          <li>
+                            <a class="usa-nav-link" href="https://my.emblemhealth.com" target="_blank" rel="noopener"><span>EmblemHealth</span></a>
+                          </li>
+                          <li>
+                            <a class="usa-nav-link" href="https://my.guideline.com" target="_blank" rel="noopener"><span>401(k)</span></a>
+                          </li>
+                          <li>
+                            <a class="usa-nav-link" href="https://secure.theworknumber.talx.com" target="_blank" rel="noopener"
+                              ><span>Employment Verification</span></a
+                              >
+                          </li>
+                          <li>
+                            <a class="usa-nav-link" href="https://www.ipp.gov" target="_blank" rel="noopener"><span>IPP</span></a>
+                          </li>
+                          <li>
+                            <a class="usa-nav-link" href="https://access.amexgbt.com" target="_blank" rel="noopener"
+                              ><span>AMEX Global Business Travel</span></a
+                              >
+                          </li>
+                          <li>
+                            <a class="usa-nav-link" href="https://login.xero.com" target="_blank" rel="noopener"><span>Xero</span></a>
+                          </li>
+                          <li>
+                            <a class="usa-nav-link" href="https://id.dau.edu" target="_blank" rel="noopener"
+                              ><span>Continuous Learning Center</span></a
+                              >
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" 
-              width="16" height="16" 
-              fill="#112e51" 
-              viewBox="0 0 24 24" 
-              style="vertical-align:middle; margin-right:6px;">
-              <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 
-                1.1.9 2 2 2h16c1.1 0 2-.9 
-                2-2V6c0-1.1-.9-2-2-2zm0 
-                4-8 5-8-5V6l8 5 8-5v2z"/>
-            </svg>
-            <a href="mailto:info@lnbfederal.com">info@lnbfederal.com</a>
-            </p>
-            <br>
-            <p>© 2025 LNB Federal Corporation. All Rights Reserved.
-            </p>
+          </div>
         </div>
-        </address>
       </div>
-    </div>
-    </div>
-  </footer>
-  </footer>
-  <script src="assets/uswds/js/uswds.min.js" async></script>
-  </div>
+    </header>
+    <div class="usa-overlay"></div>
+    <section class="usa-hero" style="background-image: url('assets/uswds/img/hero.png')">
+      <div class="usa-grid">
+        <div class="usa-hero-callout usa-section-dark">
+          <h2>
+            <span class="usa-hero-callout-alt">Information technology built for the</span> Federal Government
+          </h2>
+          <p>We support America's most critical missions with cutting-edge solutions that meet the future head-on.</p>
+          <a class="usa-button" href="mailto:info@lnbfederal.com">Define Possible</a>
+        </div>
+      </div>
+    </section>
+    <section class="usa-grid usa-section">
+      <div class="usa-width-one-third">
+        <h2>About Us</h2>
+      </div>
+      <div class="usa-width-two-thirds">
+        <p>
+          LNB Federal Corporation is a U.S. Department of Defense contractor headquartered in Wilmington, Delaware, specializing in delivering
+          mission-critical IT solutions.
+          <br /><br />Our capabilities range across Artificial Intelligence, Blockchain, Cybersecurity, DevSecOps, Open Source, Modeling, Simulation and
+          other technology consulting services. With an intimate understanding of your mission, LNB Federal deploys the best solution for your
+          unique environment and selects the right partners and products for high-velocity outcomes.
+          <br /><br />More than just trusted advisors and capable technologists, we’re your all-in-one acceleration architects, with a focus on
+          helping you enhance mission readiness and resilience faster through the application of powerful emerging technologies.
+        </p>
+      </div>
+    </section>
+    <section class="usa-grid usa-section" id="andromeda-section">
+      <div class="usa-width-one-third">
+        <h2>Microsoft for Startups &amp; AWS Startups</h2>
+      </div>
+      <div class="usa-width-two-thirds">
+        <p>
+          <strong>LNB Federal</strong> has been accepted into both the <strong>Microsoft for Startups Founders Hub</strong> and the
+          <strong>AWS Startups</strong> programs. These programs have provided Azure and AWS cloud infrastructure credits, along with access to
+          enterprise-grade development and security tools valued at <strong>over $150,000</strong> supporting our efforts to accelerate innovation
+          across our upcoming product line. Through these programs, we have also gained access to advanced supercomputing capabilities,
+          industry-leading security and privacy features, and the latest AI models and developer tools, enabling us to build our next-generation
+          platform, Andromeda, and stay ahead of the curve.
+        </p>
+        <b>Introducing Andromeda</b><br /><br />
+        Andromeda is a cloud agnostic cybersecurity and compliance automation platform built for the U.S. Department of Defense agencies. It
+        simplifies the Risk Management Framework by automating control validation, evidence collection, and continuous monitoring across standards
+        such as FISMA, NIST SP 800 53 Revision 5, FedRAMP, CMMC 2.0, and DFARS.
+        <br /><br />
+        Supporting Microsoft Azure Government, AWS GovCloud, and future Impact Level 4 on premise workloads, Andromeda applies Infrastructure as
+        Code, role based access control, and compliance as code to enforce security throughout the lifecycle. It integrates with SIEM and SOAR
+        platforms to provide real time telemetry, anomaly detection, and automated policy enforcement.
+        <br /><br />
+        With modular APIs, encryption aligned with FIPS 140 3 standards, and container orchestration using Kubernetes, Andromeda supports Zero
+        Trust architecture and meets the expectations of Executive Order directives. It also enables SCAP validation for STIG compliance and
+        integrates with GitOps workflows to support declarative deployments across development, test, and production environments.
+        <div style="margin-top: 30px;">
+          <a
+            href="https://aws.amazon.com/startups/showcase/startup-details/3b18a335-d189-4e00-b6a6-788400f5bc9e"
+            target="_blank"
+            style="
+            display: inline-block;
+            background-color: #112e51;
+            color: #ffffff;
+            font-size: 16px;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-family: 'Helvetica Neue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            "
+            rel="noopener"
+            >View at AWS Startups</a
+            >
+        </div>
+      </div>
+    </section>
+    <section class="usa-section usa-section-dark usa-graphic_list">
+      <div class="usa-grid usa-graphic_list-row">
+        <span class="usa-hero-callout-alt">
+          <h2>Our Services</h2>
+        </span>
+        <br />
+        <div class="usa-width-one-half usa-media_block">
+          <div class="usa-media_block-body">
+            <h3>Enterprise Licensing &amp; Cloud Services</h3>
+            <p>
+              Our core competency has been supporting Software Enterprise Agreements and delivering FedRAMP cloud solutions to the U.S. Government
+              agencies. LNB Federal is subject matter expert when it comes to managing service enrollments for coveted world-class cyber solutions
+              from Booz Allen, Dell, L3 Harris, MAK Technologies, Mirion, Northrop Grumman, Raytheon Solipsys, Wind River and more. We've simplified
+              our licensing approach for you.
+            </p>
+          </div>
+        </div>
+        <div class="usa-width-one-half usa-media_block">
+          <div class="usa-media_block-body">
+            <h3>Bespoke Software Development</h3>
+            <p>
+              Federal organizations require modern development practices in order to deliver capabilities quickly with complete confidence in
+              quality and security. We drive towards a centralized yet distributed model so that different missions can quickly build more robust
+              capabilities through hardened and reusable containers and source code repositories that accelerate time to deployment and ensure that
+              the mission (not the technical process) is the focus.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="usa-grid usa-graphic_list-row">
+        <div class="usa-width-one-half usa-media_block">
+          <div class="usa-media_block-body">
+            <h3>IT Professional Services</h3>
+            <p>
+              LNB Federal connects Government employers to staff positions in 54151S and 54151HACS labor category. On-demand talent for DoW-IT
+              projects requiring candidates to posses or are able to obtain a Government security clearance, maintain a CAC Card, and adhere to
+              Directive 8570.01-M. Includes candidates in the pool possessing or are able to obtain Top Secret Clearance and SCI Eligibility and are
+              willing to undergo a Counterintelligence polygraph.
+            </p>
+          </div>
+        </div>
+        <div class="usa-width-one-half usa-media_block">
+          <div class="usa-media_block-body">
+            <h3>Cybersecurity Solutions</h3>
+            <p>
+              Cyberattacks are on the rise across all levels of Government, posing a significant risk to national security. Public sector agencies
+              require cybersecurity tools to protect critical data at every endpoint. Our dedicated team at LNB Federal specializes in providing
+              federal agencies with security solutions to safeguard their cyber ecosystem. Our team assists our customers in building cyber
+              solutions to meet the evolving cybersecurity requirements.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="usa-grid usa-section">
+      <div class="usa-width-one-third">
+        <h2>Resilient &amp; Mission-focused Cyber Solutions</h2>
+      </div>
+      <div class="usa-width-two-thirds">
+        <p>
+          <b>Cybersecurity Maturity Program</b>
+          <br />The world of cybersecurity is ever-changing and cyberattacks continue to expand in scale and scope. It’s nearly impossible to
+          single-handedly keep up with the evolving threat environment and cybersecurity best practices, especially when many information security
+          and risk management teams are juggling competing priorities with limited resources.
+          <br /><br />LNB Federal can help you alleviate this burden by giving you access to expertise and resources you need to advance cybersecurity
+          culture, develop programs and processes, and defend your organization. We partner with you to create and help you sustain a cybersecurity
+          strategy that can realistically and cost-effectively advance your cyber maturity and improve your cyber resilience.
+          <br /><br />
+          <b>Government Cybersecurity Solutions</b>
+          <br />LNB Federal has established strategic, long-term relationships with the industry’s leading cybersecurity manufacturers to offer
+          Government entities proven, cost-effective protection for infrastructures, networks, and assets. We hold various contracts that enable us
+          to serve public sector customers throughout the United States, including Agency-specific agreements and Government-wide acquisition
+          vehicles.
+          <br /><br />Our exclusive partners include, but are not limited to, BeyondTrust, Cobalt, Commvault, Fortra, Imperva, Netwrix, Palo Alto
+          Networks, RSA, Tenable.
+        </p>
+      </div>
+    </section>
+    <section class="usa-grid usa-section">
+      <div class="usa-width-one-third">
+        <h2>Digital Battlespace</h2>
+      </div>
+      <div class="usa-width-two-thirds">
+        <p>
+          <b>Integrated Tech for C4ISR</b>
+          <br />Digital Battlespace solutions speed up the decision cycle by delivering smart technologies to empower a truly joint force. We provide
+          modular, scalable, and flexible solutions to seize decision advantage faster. These solutions are designed to align with the Department of
+          Defense (DoD) mission, creating systems that are open, integrated, and smarter from enterprise to edge. These solutions focus on addressing
+          the DoW’s most vital challenges in three key areas:
+          <br /><br />- Command, Control, and Communications (C3) and Battle Management
+          <br />- Intelligence, Surveillance, and Reconnaissance (ISR) and Electronic Warfare
+          <br />- Warfighter Systems and Human-Machine Teaming
+          <br /><br />Gain the advantage of integrated mission expertise, innovative partnerships, and technical talent for mission success. By using
+          truly open architectures and Government-owned APIs, this keeps the DoW in control of its data, insights, and analytics.
+          <br /><br />
+          <b>Modeling &amp; Simulation Solutions</b>
+          <br />LNB Federal provides military simulation technology and training systems. We offer a suite of Commercial-Off-the-Shelf (COTS)
+          simulation software to Governments, system integrators, and customers nationwide. We excel as a partner in delivering tailored solutions to
+          unique training challenges. Our solutions are portable, easy to use and maintain, visually appealing, and able to meet individual and
+          collective training requirements.
+          <br /><br />You can fill your synthetic environment with urban, battlefield, maritime, air, and space activity using powerful and flexible
+          computer-generated forces platform. Our partner's top product line can simulate the full range of domains that coexist as a whole on Earth
+          - from the ocean floor to the elliptical orbits around our planet. Simulate your entities, their relationships to one another, the terrains
+          they live on, the localized weather systems and the environmental effectors to meet your simulation needs.
+        </p>
+      </div>
+    </section>
+    <section class="usa-grid usa-section">
+      <div class="usa-width-one-third">
+        <h2>Bespoke Software Development</h2>
+      </div>
+      <div class="usa-width-two-thirds">
+        <p>
+          Digital transformation should be a constant evolution, not a one-time target. In today's dynamic technology landscape, accelerating
+          capabilities with continuous and rapid software development is a necessity.
+          <br /><br />LNB Federal enables organizations to enhance and jumpstart software development efforts to meet mission and business objectives.
+          With the need for faster build, feedback, and deployment, we make it possible to accelerate and automate at every phase of the delivery
+          lifecycle. Our teams use scaled agile practices and DevSecOps pipelines, along with open, cloud-native, and portable architectures to
+          create digital environments that are user-centric, scalable, and modular.
+          <br /><br />In addition, we reinforce our software solutions with data analytics and intelligence-grade cybersecurity for systems that
+          organizations can trust for mission resiliency. Our open source DevSecOps capability - Solutions Delivery Platform enables teams to
+          dramatically reduce setup time and to continuously incorporate security into the software development process.
+        </p>
+      </div>
+    </section>
+    <section class="usa-section usa-section-dark usa-graphic_list">
+      <div class="usa-grid usa-graphic_list-row">
+        <span class="usa-hero-callout-alt">
+          <h2>Who We Serve</h2>
+        </span>
+        <br />
+        <div class="usa-width-one-half usa-media_block">
+          <div class="usa-media_block-body">
+            <h3>U.S. Defense</h3>
+            <p>
+              The U.S. Department of Defense (DoD) is responsible for protecting national security at home and abroad. LNB Federal deliver leading
+              technology solutions that help the Defense industry build agile resources and maintain security while advancing warfighter IT
+              capabilities.
+            </p>
+          </div>
+        </div>
+        <div class="usa-width-one-half usa-media_block">
+          <div class="usa-media_block-body">
+            <h3>Civil Government</h3>
+            <p>
+              Whether ensuring citizen safety, security, and well-being or boosting national competitiveness, we work shoulder-to-shoulder with civil
+              Government clients to help them deliver on their public service missions. LNB Federal empowers civil agencies to achieve better and
+              faster mission outcomes for the nation and its people.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="usa-grid usa-graphic_list-row">
+        <div class="usa-width-one-half usa-media_block">
+          <div class="usa-media_block-body">
+            <h3>UN Specialized Agencies</h3>
+            <p>
+              The UN Specialized Agencies tackles some of the world’s greatest challenges. By integrating our unique knowledge and capabilities in
+              technology, we consult and develop innovative solutions to turn their ambitious concepts into real projects, helping them implement
+              them at the grassroots level.
+            </p>
+          </div>
+        </div>
+        <div class="usa-width-one-half usa-media_block">
+          <div class="usa-media_block-body">
+            <h3>Health</h3>
+            <p>
+              With our holistic digital approach, deep expertise in cloud platforms and infrastructure, and a thorough understanding of the health
+              sector’s unique missions and challenges, we help our health clients navigate the technical complexities of enterprise IT
+              modernization, no matter where they are in the process.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="usa-section usa-section-light usa-graphic_list">
+      <div class="usa-grid usa-graphic_list-row">
+        <span class="usa-hero-callout-alt-dark">
+          <h2>Here are four reasons why you want to work with us</h2>
+        </span>
+        <br />
+        <div class="usa-width-one-half usa-media_block">
+          <div class="usa-media_block-body">
+            <h3>Ability to Close Deals</h3>
+            <p>
+              Whether a simple resale or a challenging transaction involving a complex financing structure, we’ll help Government and industry get
+              the deal done in an efficient and timely manner.
+            </p>
+          </div>
+        </div>
+        <div class="usa-width-one-half usa-media_block">
+          <div class="usa-media_block-body">
+            <h3>Strong Partner Relationships</h3>
+            <p>
+              We have strong relationships with manufacturers that we’ve worked with for many years. Our relationships with distribution partners
+              help us to deliver complex, multi-vendor solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="usa-grid usa-graphic_list-row">
+        <div class="usa-width-one-half usa-media_block">
+          <div class="usa-media_block-body">
+            <h3>Culture of Excellence</h3>
+            <p>
+              Our commitment to integrity and fairness guides all of our business transactions. We are responsive, attentive, and committed to
+              meeting our clients’ needs.
+            </p>
+          </div>
+        </div>
+        <div class="usa-width-one-half usa-media_block">
+          <div class="usa-media_block-body">
+            <h3>Breadth &amp; Depth of Offerings</h3>
+            <p>
+              LNB Federal offers a portfolio of over 300 enterprise IT solutions and has access to over 50 on-demand contractual IT talents, all
+              supported by a dedicated sales and technology team.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="usa-footer usa-footer-medium" role="contentinfo">
+      <section class="usa-section usa-section-dark usa-graphic_list">
+        <div class="usa-grid usa-graphic_list-row">
+          <span class="usa-hero-callout-alt">
+            <h2>Some agencies we’ve worked with</h2>
+          </span>
+          <br />
+          <div class="usa-width-one-half usa-media_block">
+            <div class="usa-media_block-body">
+              <h3><a href="https://www.nasa.gov" style="text-decoration: none;" target="_blank" rel="noopener">NASA</a></h3>
+            </div>
+          </div>
+          <div class="usa-width-one-half usa-media_block">
+            <div class="usa-media_block-body">
+              <h3><a href="https://www.un.org" style="text-decoration: none;" target="_blank" rel="noopener">United Nations</a></h3>
+            </div>
+          </div>
+        </div>
+        <div class="usa-grid usa-graphic_list-row">
+          <div class="usa-width-one-half usa-media_block">
+            <div class="usa-media_block-body">
+              <h3><a href="https://www.lockheedmartin.com" style="text-decoration: none;" target="_blank" rel="noopener">Lockheed Martin</a></h3>
+            </div>
+          </div>
+          <div class="usa-width-one-half usa-media_block">
+            <div class="usa-media_block-body">
+              <h3><a href="https://www.northropgrumman.com" style="text-decoration: none;" target="_blank" rel="noopener">Northrop Grumman</a></h3>
+            </div>
+          </div>
+        </div>
+        <div class="usa-grid usa-graphic_list-row">
+          <div class="usa-width-one-half usa-media_block">
+            <div class="usa-media_block-body">
+              <h3><a href="https://www.boozallen.com" style="text-decoration: none;" target="_blank" rel="noopener">Booz Allen Hamilton</a></h3>
+            </div>
+          </div>
+          <div class="usa-width-one-half usa-media_block">
+            <div class="usa-media_block-body">
+              <h3><a href="https://www.navair.navy.mil" style="text-decoration: none;" target="_blank" rel="noopener">Naval Air Systems Command</a></h3>
+            </div>
+          </div>
+        </div>
+        <div class="usa-grid usa-graphic_list-row">
+          <div class="usa-width-one-half usa-media_block">
+            <div class="usa-media_block-body">
+              <h3><a href="https://www.navsea.navy.mil" style="text-decoration: none;" target="_blank" rel="noopener">Naval Surface Warfare Center</a></h3>
+            </div>
+          </div>
+          <div class="usa-width-one-half usa-media_block">
+            <div class="usa-media_block-body">
+              <h3><a href="https://www.afrl.af.mil" style="text-decoration: none;" target="_blank" rel="noopener">Air Force Research Laboratory</a></h3>
+            </div>
+          </div>
+        </div>
+        <div class="usa-grid usa-graphic_list-row">
+          <div class="usa-width-one-half usa-media_block">
+            <div class="usa-media_block-body">
+              <h3>
+                <a href="https://www.marcorsyscom.marines.mil" style="text-decoration: none;" target="_blank" rel="noopener"
+                  >Marine Corps Systems Command</a
+                  >
+              </h3>
+            </div>
+          </div>
+          <div class="usa-width-one-half usa-media_block">
+            <div class="usa-media_block-body">
+              <h3><a href="https://www.socom.mil" style="text-decoration: none;" target="_blank" rel="noopener">U.S. Special Operations Command</a></h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <main id="main-content" class="usa-grid usa-section usa-content usa-layout-docs">
+      <h3 id="section-heading">Corporate Information</h3>
+      <b>Entity Name:</b> LNB Federal Corporation
+      <br />
+      <b>State of Incorporation:</b> Delaware, United States
+      <br />
+      <b>File Number - Delaware Division of Corporations:</b> 10201290
+      <br />
+      <b>Legal Structure:</b> C Corporation
+      <br />
+      <b>Tax Classification</b> Corporate Entity Not Tax Exempt
+      <br />
+      <h3>Government Identifiers</h3>
+      <h4>🇺🇸 United States Government</h4>
+      <b>CAGE:</b> 12WN4
+      <br />
+      <b>UEI:</b> NG4XZH3GUA48
+      <br />
+      <b>NAICS:</b> Computer Systems Design Services (541512), Software Publishers (511210)
+      <br />
+      <h4>🇬🇧 UK Government (Crown Commercial Service &amp; Ministry of Defense)</h4>
+      <b>D-U-N-S®:</b> 119520524
+      <br />
+      <h4>🇸🇬 Government of Singapore</h4>
+      <b>Trading Partner Reference Number:</b> Y305448
+      <br />
+      <b>SSIC:</b> Software Development (62011), Research and Experimental Development on Engineering (72101)
+      <br />
+      <h4>🇺🇳 United Nations</h4>
+      <b>UNGM Number:</b> 1101913
+      <br />
+      <h3>E-Biz POC</h3>
+      <h4>Government Liaison</h4>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#112e51" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 4px;"></svg>
+      <b>Laxmi Narayan Behera</b>
+      <br />
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="#112e51"
+        viewBox="0 0 24 24"
+        style="vertical-align: middle; margin-right: 4px;"
+        >
+        <path
+          d="M20 4H4c-1.1 0-2 .9-2 2v12c0
+          1.1.9 2 2 2h16c1.1 0 2-.9
+          2-2V6c0-1.1-.9-2-2-2zm0
+          4-8 5-8-5V6l8 5 8-5v2z"
+          />
+      </svg>
+      <a href="mailto:lnb@lnbfederal.com">lnb@lnbfederal.com</a>
+      <br />
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="#112e51"
+        viewBox="0 0 24 24"
+        style="vertical-align: middle; margin-right: 4px;"
+        >
+        <path
+          d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.21.49 2.53.76 3.88.76a1 1 0 011 1v3.5a1 1 0 01-1 1C10.07 21.5 2.5 13.93 2.5 4a1 1 0 011-1H7a1 1 0 011 1c0 1.35.27 2.67.76 3.88a1 1 0 01-.21 1.11l-2.93 2.8z"
+          />
+      </svg>
+      <a href="tel:+12128146555">(212) 814-6555</a>
+      <br />
+      <h4>Business Liaison</h4>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#112e51" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 4px;"></svg>
+      <b>Madison Moore</b>
+      <br />
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="#112e51"
+        viewBox="0 0 24 24"
+        style="vertical-align: middle; margin-right: 4px;"
+        >
+        <path
+          d="M20 4H4c-1.1 0-2 .9-2 2v12c0
+          1.1.9 2 2 2h16c1.1 0 2-.9
+          2-2V6c0-1.1-.9-2-2-2zm0
+          4-8 5-8-5V6l8 5 8-5v2z"
+          />
+      </svg>
+      <a href="mailto:madison.moore@lnbfederal.com">madison.moore@lnbfederal.com</a>
+      <br />
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="#112e51"
+        viewBox="0 0 24 24"
+        style="vertical-align: middle; margin-right: 4px;"
+        >
+        <path
+          d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.21.49 2.53.76 3.88.76a1 1 0 011 1v3.5a1 1 0 01-1 1C10.07 21.5 2.5 13.93 2.5 4a1 1 0 011-1H7a1 1 0 011 1c0 1.35.27 2.67.76 3.88a1 1 0 01-.21 1.11l-2.93 2.8z"
+          />
+      </svg>
+      <a href="tel:+16462462102">(646) 246-2102</a>
+      <br />
+    </main>
+    <section class="usa-section usa-section-dark usa-graphic_list">
+      <div class="usa-grid usa-graphic_list-row">
+        <span class="usa-hero-callout-alt">
+          <h3>Ethics Helpline</h3>
+        </span>
+        <b>
+        <a href="https://www.worker.gov" style="text-decoration: none;">Worker.gov</a>
+        </b>
+        <br />
+        <b>
+        <a href="https://www.oversight.gov" style="text-decoration: none;">Oversight.gov</a>
+        </b>
+        <br />
+        <b>
+        <a href="https://www.eeoc.gov/know-your-rights-workplace-discrimination-illegal" style="text-decoration: none;"
+          >Know Your Rights - EEOC</a
+          >
+        </b>
+        <br />
+        <b>
+        <a href="https://whistleblower.house.gov" style="text-decoration: none;">Office of the Whistleblower Ombuds</a>
+        </b>
+        <br />
+        <b>
+        <a href="https://www.un.org/ombudsman" style="text-decoration: none;">UN Ombudsman and Mediation Services</a>
+        </b>
+        <br />
+        <b>
+        <a href="https://www.dodig.mil" style="text-decoration: none;">Department of Defense Office of Inspector General</a>
+        </b>
+      </div>
+    </section>
+    <footer class="usa-footer usa-footer-medium" role="contentinfo">
+      <div class="usa-footer-secondary_section">
+        <div class="usa-grid">
+          <div class="usa-footer-logo usa-width-one-half">
+            <img src="assets/uswds/img/favicons/logo.png" alt="LNB Federal Corporation logo" />
+            <h3 class="usa-footer-logo-heading"></h3>
+          </div>
+          <div class="usa-footer-contact-links usa-width-one-half">
+            <h3 class="usa-footer-contact-heading">LNB Federal Corporation</h3>
+            <address>
+              <div class="usa-footer-primary-content usa-footer-contact_info">
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="#112e51"
+                    viewBox="0 0 24 24"
+                    style="vertical-align: middle; margin-right: 6px;"
+                    >
+                    <path
+                      d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0
+                      9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"
+                      />
+                  </svg>
+                  800 N King St, Suite 304, #3749, Wilmington, Delaware 19801
+                </p>
+              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="#112e51"
+                viewBox="0 0 24 24"
+                style="vertical-align: middle; margin-right: 6px;"
+                >
+                <path
+                  d="M20 4H4c-1.1 0-2 .9-2 2v12c0
+                  1.1.9 2 2 2h16c1.1 0 2-.9
+                  2-2V6c0-1.1-.9-2-2-2zm0
+                  4-8 5-8-5V6l8 5 8-5v2z"
+                  />
+              </svg>
+              <a href="mailto:info@lnbfederal.com">info@lnbfederal.com</a>
+              <br />
+              <p>© 2025 LNB Federal Corporation. All Rights Reserved.</p>
+            </address>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/uswds/js/uswds.min.js" async></script>
   </body>
 </html>
