@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Fawkes Opteron Yotta -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
     <loc>https://lnbfederal.com/</loc>
     <lastmod>2025-11-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://www.fpds.gov/ezsearch/fpdsportal?q=VENDOR_UEI%3A%22NG4XZH3GUA48%22&amp;s=FPDS.GOV&amp;templateName=1.5.3&amp;indexName=awardfull&amp;x=0&amp;y=0</loc>
+    <lastmod>2025-11-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <url>
     <loc>https://www.usaspending.gov/recipient/b1a5165b-06eb-e7f1-2edb-7d013b4da56f-C/all</loc>
     <lastmod>2025-11-28</lastmod>
