@@ -337,4 +337,95 @@
     <priority>1.0</priority>
   </url>
 
+  <url>
+    <loc>https://www.dni.gov</loc>
+    <lastmod>2025-11-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.un.org/counterterrorism/en</loc>
+    <lastmod>2025-11-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.nsa.gov/</loc>
+    <lastmod>2025-11-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.dhs.gov/archive/science-and-technology/national-federal-laboratories-research-centers</loc>
+    <lastmod>2025-11-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://ucr.fbi.gov/nsb/</loc>
+    <lastmod>2025-11-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.nro.gov/</loc>
+    <lastmod>2025-11-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.nccoe.nist.gov/</loc>
+    <lastmod>2025-11-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.disa.mil/</loc>
+    <lastmod>2025-11-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.cybercom.mil/</loc>
+    <lastmod>2025-11-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.nist.gov/topics/cybersecurity</loc>
+    <lastmod>2025-11-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gsa.gov/technology</loc>
+    <lastmod>2025-11-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.justice.gov/criminal-ccips</loc>
+    <lastmod>2025-11-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.energy.gov/ceser/cybersecurity-infrastructure-security-and-energy-restoration</loc>
+    <lastmod>2025-11-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
 </urlset>
